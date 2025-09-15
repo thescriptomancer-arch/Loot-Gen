@@ -1,0 +1,17 @@
+,,,,,
+Animated,Shield only,"On command, shield floats within 2 ft and protects as if wielded; still imposes normal shield penalties; only one animated shield functions at a time.",Strong transmutation; CL 12th,Craft Magic Arms and Armor; animate objects,+2 bonus
+Arrow Catching,Shield only,+1 deflection vs ranged weapons; draws ranged attacks from targets within 5 ft to the bearer unless projectile's enhancement exceeds shield's base AC bonus; toggle by command word; attackers ignore miss chances vs bearer.,Moderate abjuration; CL 8th,Craft Magic Arms and Armor; entropic shield,+1 bonus
+Arrow Deflection,Shield only,"As Deflect Arrows: 1/round, DC 20 Reflex save (+ weapon's enhancement to DC) to deflect; must be aware and not flat-footed; exceptional missiles not deflected.",Faint abjuration; CL 5th,Craft Magic Arms and Armor; shield,+2 bonus
+Bashing,Shield only,Designed for shield bash: deals damage as if two size categories larger; acts as a +1 weapon when bashing (light and heavy shields only).,Moderate transmutation; CL 8th,Craft Magic Arms and Armor; bull's strength,+1 bonus
+Blinding,Shield only,Up to 2/day on command: 20-ft flash; creatures (except wielder) Reflex DC 14 or blinded 1d4 rounds.,Moderate evocation; CL 7th,Craft Magic Arms and Armor; searing light,+1 bonus
+Fortification (Light),Both,Protects vital areas; 25% chance to negate crits/sneak attacks (damage becomes normal).,Strong abjuration; CL 13th,Craft Magic Arms and Armor; limited wish or miracle,+1 bonus
+Fortification (Moderate),Both,Protects vital areas; 75% chance to negate crits/sneak attacks (damage becomes normal).,Strong abjuration; CL 13th,Craft Magic Arms and Armor; limited wish or miracle,+3 bonus
+Fortification (Heavy),Both,Protects vital areas; 100% chance to negate crits/sneak attacks (damage becomes normal).,Strong abjuration; CL 13th,Craft Magic Arms and Armor; limited wish or miracle,+5 bonus
+Ghost Touch,Both,Armor/shield bonus applies against incorporeal attacks; usable and wearable by incorporeal creatures.,Strong transmutation; CL 15th,Craft Magic Arms and Armor; etherealness,+3 bonus
+Spell Resistance (SR 13),Armor only,Grants spell resistance 13 while worn.,Strong abjuration; CL 15th,Craft Magic Arms and Armor; spell resistance,+2 bonus
+Spell Resistance (SR 15),Armor only,Grants spell resistance 15 while worn.,Strong abjuration; CL 15th,Craft Magic Arms and Armor; spell resistance,+3 bonus
+Spell Resistance (SR 17),Armor only,Grants spell resistance 17 while worn.,Strong abjuration; CL 15th,Craft Magic Arms and Armor; spell resistance,+4 bonus
+Spell Resistance (SR 19),Armor only,Grants spell resistance 19 while worn.,Strong abjuration; CL 15th,Craft Magic Arms and Armor; spell resistance,+5 bonus
+Wild,Both,Wearer retains armor (and enhancement) bonus while in wild shape; armor/shield is invisible while in wild shape.,Moderate transmutation; CL 9th,Craft Magic Arms and Armor; baleful polymorph,+3 bonus
+Invulnerability,Armor only,Grants DR 5/magic.,Strong abjuration and perhaps evocation (if miracle is used); CL 18th,Craft Magic Arms and Armor; stoneskin; wish or miracle,+3 bonus
+Reflecting,Shield only,1/day reflects a spell back at its caster (as spell turning).,Strong abjuration; CL 14th,Craft Magic Arms and Armor; spell turning,+5 bonus

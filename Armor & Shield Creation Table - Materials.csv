@@ -1,0 +1,69 @@
+"Match 
+Material","Special
+Material","Treated as 
+Masterwork","Changes for 
+Light Armor","Changes for 
+Medium Armor","Changes for 
+Heavy Armor","Changes for 
+Shield",Hardness,Other Changes
+Iron,Mithral,Yes,"Item Cost Modifier: +1,000 GP
+Armor treated as Light
+Spell Failure Chance Reduced by 10%
+Maximum Dexterity Bonus Increased by 2
+Armor Check Penalties are Reduced by 3 (to a minimum of 0)
+Weight is reduced by 50%","Item Cost Modifier: +4,000 GP
+Armor treated as Light
+Spell Failure Chance Reduced by 10%
+Maximum Dexterity Bonus Increased by 2
+Armor Check Penalties are Reduced by 3 (to a minimum of 0)
+Weight is reduced by 50%","Item Cost Modifier: +9,000 GP
+Armor treated as Medium
+Spell Failure Chance Reduced by 10%
+Maximum Dexterity Bonus Increased by 2
+Armor Check Penalties are Reduced by 3 (to a minimum of 0)
+Weight is reduced by 50%","Item Cost Modifier: +1,000 GP
+Spell Failure Chance Reduced by 10%
+Armor Check Penalties are Reduced by 3 (to a minimum of 0)
+Weight is reduced by 50%",15,
+Iron,Steel,No,Weight is reduced by 10%,Weight is reduced by 10%,Weight is reduced by 10%,Weight is reduced by 10%,11,
+Iron,Cold Iron,No,"Item's Cost Modifier: Add the Base Cost 
+and Construction Cost","Item's Cost Modifier: Add the Base Cost 
+and Construction Cost","Item's Cost Modifier: Add the Base Cost 
+and Construction Cost","Item's Cost Modifier: Add the Base Cost 
+and Construction Cost",10,"Armor and Shields made of Cold Iron confer no mechanical benefits. This should be reflected in the item's description, lending a sense of special make and use by groups dedicated to the destruction of fey creatures.
+
+If the item is enchanted in any way, add 2,000 GP to the cost of the item"
+Iron,Alchemical Silver,No,Item's Cost Modifier: +50 GP,Item's Cost Modifier: +100 GP,Item's Cost Modifier: +200 GP,Item's Cost Modifier: +20 GP,8,"Armor and Shields made of Alchemical Silver confer no mechanical benefits. This should be reflected in the item's description, lending a sense of special make and use by groups dedicated to the destruction of lycanthrope creatures."
+Iron,Adamantine,Yes,"Item Cost Modifier: +5,000 GP
+Wearer gains DR 1/-
+Item's Hit Points are increased by 1/3
+Armor Check Penality is reduced by 1","Item Cost Modifier: +10,000 GP
+Wearer gains DR 2/-
+Item's Hit Points are increased by 1/3
+Armor Check Penality is reduced by 1","Item Cost Modifier: +15,000 GP
+Wearer gains DR 3/-
+Item's Hit Points are increased by 1/3
+Armor Check Penality is reduced by 1","Item Cost Modifier: +5,000 GP
+Item's Hit Points are increased by 1/3
+Armor Check Penality is reduced by 1",20,
+Wood,Darkwood,Yes,"Item Cost Modifier: +10 GP per pound of item
+Armor Check Penality is reduced by 2
+Weight is reduced by 50%","Item Cost Modifier: +10 GP per pound of item
+Armor Check Penality is reduced by 2
+Weight is reduced by 50%","Item Cost Modifier: +10 GP per pound of item
+Armor Check Penality is reduced by 2
+Weight is reduced by 50%","Item Cost Modifier: +10 GP per pound of item
+Armor Check Penality is reduced by 2
+Weight is reduced by 50%",5,
+"Iron, Hide",Dragonhide,Yes,"Item Cost Modifier: +150 GP
+Armor Check Penality is reduced by 1","Item Cost Modifier: +150 GP
+Armor Check Penality is reduced by 1","Item Cost Modifier: +150 GP
+Armor Check Penality is reduced by 1","Item Cost Modifier: +150 GP
+Armor Check Penality is reduced by 1",10,"Because dragonhide armor isn’t made of metal, 
+druids can wear it without penalty
+
+Dragonhide items are limited by type, if 
+the base item is not ""Hide Armor"", ""Banded Mail"",
+""Half Plate"", ""Full Plate"", or any Shield, 
+the platform must return to Step 1 and select 
+one of the listed options"

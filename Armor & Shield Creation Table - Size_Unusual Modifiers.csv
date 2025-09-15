@@ -1,0 +1,22 @@
+Size Percentage Distribution,,,,
+Fine,0.5%,,,
+Diminutive,1.0%,,,
+Tiny,2.0%,,,
+Small,8.0%,,,
+Medium,80.0%,,,
+Large,5.0%,,,
+Huge,2.0%,,,
+Gargantuan,1.0%,,,
+Colossal,0.5%,,,
+,,,,
+,,,,
+Size,Humanoid,,Nonhumanoid,
+,Cost,Weight,Cost,Weight
+Tiny or smaller (1),×½,×1/10,×1,×1/10
+Small,×1,×½,×2,×½
+Medium,×1,×1,×2,×1
+Large,×2,×2,×4,×2
+Huge,×4,×5,×8,×5
+Gargantuan,×8,×8,×16,×8
+Colossal,×16,×12,×32,×12
+(1) Divide armor bonus by 2.,,,,
