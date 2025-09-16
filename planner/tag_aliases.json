@@ -1,0 +1,14 @@
+{
+  "tomb":"crypt",
+  "grave":"crypt",
+  "bone":"undead",
+  "skeleton":"undead",
+  "ghoul":"undead",
+  "zombie":"undead",
+  "book":"library",
+  "scriptorium":"scriptorium",
+  "wizard":"arcane",
+  "mage":"arcane",
+  "temple":"shrine",
+  "vault":"treasury"
+}
