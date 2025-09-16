@@ -1,6 +1,0 @@
-id,trigger_kind,trigger_category,percent_chance,addon_key,variant_key,notes
-AA_HEAVY_ARMOR_GAUNTLETS,armor,heavy,50,gauntlets,,Generate matching gauntlets set
-AA_GAUNTLETS_LOCKED,armor,heavy,10,locked_gauntlets,if_gauntlets_generated,Upgrade generated gauntlets to locked gauntlets
-AA_GAUNTLETS_SPIKED,armor,heavy,10,spiked_gauntlets,if_gauntlets_generated,Add spiked gauntlets instead of normal
-AA_HEAVY_ARMOR_SPIKES,armor,heavy,5,armor_spikes,,Add armor spikes if base armor allows armor spikes
-AA_SHIELD_SPIKES,shield,*,20,shield_spikes,,Add shield spikes if base shield allows shield spikes
