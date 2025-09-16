@@ -1,0 +1,1 @@
+[{"requirement":"Weekly tithe of 50 gp","cadence":"weekly","if_unmet":"item becomes dormant 7 days"},{"requirement":"Daily one-hour vigil","cadence":"daily","if_unmet":"item refuses to function 24h"}]
