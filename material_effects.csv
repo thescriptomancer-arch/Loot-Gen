@@ -1,0 +1,3 @@
+id,material_id,applies_when,stat,bonus,stack_group,notes
+ME_SILVER_GRAPPLE_LYCAN,MAT_ALCHEMICAL_SILVER_ARMOR,target_type=lycanthrope,grapple,1,material_conditional,Homebrew: +1 to grapple checks when grappling lycanthropes.
+ME_COLDIRON_GRAPPLE_FEY,MAT_COLD_IRON_ARMOR,target_type=fey,grapple,1,material_conditional,Homebrew: +1 to grapple checks when grappling fey.

@@ -1,0 +1,4 @@
+id,addon_key,name,kind,applies_to,cost_gp,weight_lb,notes
+ADDON_ARMOR_SPIKES,armor_spikes,Armor spikes,addon,armor,50,10.0,
+ADDON_LOCKED_GAUNTLETS,locked_gauntlets,"Gauntlet, locked",weapon,armor,8,5.0,
+ADDON_SHIELD_SPIKES,shield_spikes,Shield spikes,addon,shield,10,5.0,
