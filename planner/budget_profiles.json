@@ -1,0 +1,5 @@
+[
+  {"id":"flat","rule":"even","notes":"Even split across rooms."},
+  {"id":"rising","rule":"linear_increase","min_pct":8,"max_pct":30,"notes":"Deeper rooms get more."},
+  {"id":"boss_room","rule":"boss_heavy","boss_pct":35,"notes":"Boss room gets a big slice; rest even."}
+]
