@@ -1,0 +1,13 @@
+[
+  {"id":"entry","name":"Entrance","tags":["entry","transit","sentry"],"notes":"First chamber; light clutter."},
+  {"id":"guardroom","name":"Guardroom","tags":["martial","watch","barracks"]},
+  {"id":"armory","name":"Armory","tags":["martial","weapons","armor"]},
+  {"id":"library","name":"Library","tags":["books","scrolls","knowledge","arcane"]},
+  {"id":"scriptorium","name":"Scriptorium","tags":["scribal","scrolls","ink","arcane"]},
+  {"id":"laboratory","name":"Laboratory","tags":["arcane","alchemy","components"]},
+  {"id":"shrine","name":"Shrine","tags":["divine","relics","offerings"]},
+  {"id":"crypt","name":"Crypt","tags":["undead","burial","reliquary"]},
+  {"id":"ossuary","name":"Ossuary","tags":["undead","bone","reliquary"]},
+  {"id":"storage","name":"Storage","tags":["crates","sacks","supplies"]},
+  {"id":"treasury","name":"Treasury","tags":["wealth","vault","strongbox"]}
+]
