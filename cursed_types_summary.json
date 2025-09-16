@@ -1,0 +1,1 @@
+[{"type":"Intermittent—Recharge","trigger":"per_use","cadence":"50% chance to function","notes":""},{"type":"Intermittent—Dependent","trigger":"dependent","cadence":"requires condition","notes":"Pair with dependent situations"}]
