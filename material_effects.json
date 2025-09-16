@@ -1,20 +1,20 @@
 [
   {
-    "id": "ME_SILVER_GRAPPLE_LYCANTHROPES",
-    "material_id": "MAT_ALCHEMICAL_SILVER_ARMOR_HB",
-    "applies_when": "always",
-    "stat": "situational_bonus",
-    "bonus": "+1 grapple checks against lycanthropes",
-    "stack_group": "material_trait",
-    "notes": "Homebrew narrative/mechanical hook"
+    "id": "ME_ALCH_SILVER_GRAPPLE",
+    "material_id": "MAT_ALCHEMICAL_SILVER_ARMOR_HOME",
+    "applies_when": "any",
+    "stat": "grapple_vs_lycanthropes",
+    "bonus": 1,
+    "stack_group": "species_grapple",
+    "notes": "Homebrew narrative hook: armor worked to bind lycanthropic joints."
   },
   {
-    "id": "ME_COLDIRON_GRAPPLE_FEY",
-    "material_id": "MAT_COLD_IRON_ARMOR_HB",
-    "applies_when": "always",
-    "stat": "situational_bonus",
-    "bonus": "+1 grapple checks against fey",
-    "stack_group": "material_trait",
-    "notes": "Homebrew narrative/mechanical hook"
+    "id": "ME_COLD_IRON_GRAPPLE",
+    "material_id": "MAT_COLD_IRON_ARMOR_HOME",
+    "applies_when": "any",
+    "stat": "grapple_vs_fey",
+    "bonus": 1,
+    "stack_group": "species_grapple",
+    "notes": "Homebrew narrative hook: cold iron studs and channels bite into fey glamers."
   }
 ]
