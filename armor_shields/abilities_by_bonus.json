@@ -1,1 +1,20 @@
-[{"id":"AB_FORT_LIGHT","name":"Fortification, Light","+equiv":1,"slot":"armor","prereq_enh_min":1,"source":"DMG"},{"id":"AB_ANIMATED","name":"Animated","+equiv":2,"slot":"shield","prereq_enh_min":1,"source":"DMG"}]
+[
+  {"id":"AB_FORT_LIGHT","name":"Fortification, Light","+equiv":1,"slot":"armor|shield","prereq_enh_min":1,"source":"SRD"},
+  {"id":"AB_FORT_MED","name":"Fortification, Moderate","+equiv":3,"slot":"armor|shield","prereq_enh_min":1,"source":"SRD"},
+  {"id":"AB_FORT_HEAVY","name":"Fortification, Heavy","+equiv":5,"slot":"armor|shield","prereq_enh_min":1,"source":"SRD"},
+  {"id":"AB_GHOST_TOUCH","name":"Ghost touch","+equiv":3,"slot":"armor|shield","prereq_enh_min":1,"source":"SRD"},
+  {"id":"AB_INVULNERABILITY","name":"Invulnerability","+equiv":3,"slot":"armor","prereq_enh_min":1,"source":"SRD"},
+  {"id":"AB_WILD","name":"Wild","+equiv":3,"slot":"armor|shield","prereq_enh_min":1,"source":"SRD"},
+
+  {"id":"AB_ARROW_CATCHING","name":"Arrow catching","+equiv":1,"slot":"shield","prereq_enh_min":1,"source":"SRD"},
+  {"id":"AB_BLINDING","name":"Blinding","+equiv":1,"slot":"shield","prereq_enh_min":1,"source":"SRD"},
+  {"id":"AB_ARROW_DEFLECTION","name":"Arrow deflection","+equiv":2,"slot":"shield","prereq_enh_min":1,"source":"SRD"},
+  {"id":"AB_ANIMATED","name":"Animated","+equiv":2,"slot":"shield","prereq_enh_min":1,"source":"SRD"},
+  {"id":"AB_BASHING","name":"Bashing","+equiv":1,"slot":"shield","prereq_enh_min":1,"source":"SRD"},
+  {"id":"AB_REFLECTING","name":"Reflecting","+equiv":5,"slot":"shield","prereq_enh_min":1,"source":"SRD"},
+
+  {"id":"AB_SPELL_RESIST_13","name":"Spell resistance (13)","+equiv":2,"slot":"armor|shield","prereq_enh_min":1,"source":"SRD"},
+  {"id":"AB_SPELL_RESIST_15","name":"Spell resistance (15)","+equiv":3,"slot":"armor|shield","prereq_enh_min":1,"source":"SRD"},
+  {"id":"AB_SPELL_RESIST_17","name":"Spell resistance (17)","+equiv":4,"slot":"armor|shield","prereq_enh_min":1,"source":"SRD"},
+  {"id":"AB_SPELL_RESIST_19","name":"Spell resistance (19)","+equiv":5,"slot":"armor|shield","prereq_enh_min":1,"source":"SRD"}
+]
