@@ -1,9 +1,1 @@
-{
-  "version":1,
-  "p_magical_by_affordability":[
-    {"multiple_of_budget":0.4,"p":10},
-    {"multiple_of_budget":0.8,"p":25},
-    {"multiple_of_budget":1.0,"p":40},
-    {"multiple_of_budget":1.4,"p":65}
-  ]
-}
+{"version":1,"p_magical_by_affordability":[{"multiple_of_budget":0.4,"p":10},{"multiple_of_budget":0.8,"p":25},{"multiple_of_budget":1.0,"p":40},{"multiple_of_budget":1.4,"p":65}]}

@@ -1,0 +1,11 @@
+{
+  "generated": "2025-09-17T02:44:56.064082Z",
+  "areas": {
+    "armor_shields": "seeded core + faerun + homebrew + bespoke"
+  },
+  "todo": [
+    "Add more bespoke items from DMG/MIC/AEG, etc. (identifiers + gp, no rules text).",
+    "Add additional material shards per book (e.g., Eberron, Frostburn, Sandstorm).",
+    "Expand abilities tables by book with ids/pricing."
+  ]
+}

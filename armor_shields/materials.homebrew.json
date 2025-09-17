@@ -1,0 +1,35 @@
+[
+  {
+    "id":"MAT_STEEL_TEMPERED",
+    "name":"Tempered Steel (Homebrew)",
+    "is_homebrew": true,
+    "substrate":"metal",
+    "applies_to":["armor","shield"],
+    "pricing_rule":"FLAT_ADDER",
+    "flat_gp":150,
+    "effects":{"hardness_delta":1,"hp_mult":1.05},
+    "notes":"Slightly tougher steel from superior tempering."
+  },
+  {
+    "id":"MAT_ALCHEMICAL_SILVER_ARMOR",
+    "name":"Alchemical Silver (Armor) — Homebrew",
+    "is_homebrew": true,
+    "substrate":"metal",
+    "applies_to":["armor","shield"],
+    "pricing_rule":"ADDERS_BY_CATEGORY",
+    "category_adders_gp":{"light":150,"medium":300,"heavy":450,"shield":150},
+    "effects":{"hardness_override":8,"hp_mult":0.9,"asf_delta":5},
+    "notes":"Soft, bright plates; slightly higher ASF and lower hardness."
+  },
+  {
+    "id":"MAT_COLD_IRON_ARMOR",
+    "name":"Cold Iron (Armor) — Homebrew",
+    "is_homebrew": true,
+    "substrate":"metal",
+    "applies_to":["armor","shield"],
+    "pricing_rule":"COST_MULT",
+    "cost_mult": 2.0,
+    "effects":{"hardness_override":10},
+    "notes":"Forged as armor at twice base cost."
+  }
+]

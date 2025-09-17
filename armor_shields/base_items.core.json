@@ -1,12 +1,7 @@
 [
-  {"id":"ARM_CHAIN_SHIRT","name":"Chain Shirt","kind":"armor","category":"light","base_material":"steel",
-   "armor_bonus":4,"max_dex":4,"acp":-2,"asf_percent":20,"weight_lb":25,"cost_gp":100,"hardness":10,"hp":20,"allows_armor_spikes":true,"allows_shield_spikes":false,"source":"PHB"},
-  {"id":"ARM_BREASTPLATE","name":"Breastplate","kind":"armor","category":"medium","base_material":"steel",
-   "armor_bonus":5,"max_dex":3,"acp":-4,"asf_percent":25,"weight_lb":30,"cost_gp":200,"hardness":10,"hp":30,"allows_armor_spikes":true,"allows_shield_spikes":false,"source":"PHB"},
-  {"id":"ARM_FULL_PLATE","name":"Full Plate","kind":"armor","category":"heavy","base_material":"steel",
-   "armor_bonus":8,"max_dex":1,"acp":-6,"asf_percent":35,"weight_lb":50,"cost_gp":1500,"hardness":10,"hp":40,"allows_armor_spikes":true,"allows_shield_spikes":false,"source":"PHB"},
-  {"id":"SH_HEAVY_STEEL","name":"Heavy Steel Shield","kind":"shield","category":"shield","base_material":"steel",
-   "shield_bonus":2,"acp":-2,"asf_percent":15,"weight_lb":15,"cost_gp":20,"hardness":10,"hp":20,"allows_shield_spikes":true,"source":"PHB"},
-  {"id":"ARM_DUELING_CLOAK","name":"Dueling Cloak","kind":"armor","category":"light","base_material":"cloth",
-   "armor_bonus":1,"max_dex":null,"acp":-1,"asf_percent":10,"weight_lb":3,"cost_gp":15,"hardness":2,"hp":5,"source":"Dragon 335 p77"}
+  {"id":"ARM_CHAIN_SHIRT","name":"Chain Shirt","kind":"armor","category":"light","base_material":"steel","armor_bonus":4,"max_dex":4,"acp":-2,"asf_percent":20,"weight_lb":25,"cost_gp":100,"hardness":10,"hp":20,"allows_armor_spikes":true,"allows_shield_spikes":false,"source":"PHB"},
+  {"id":"ARM_BREASTPLATE","name":"Breastplate","kind":"armor","category":"medium","base_material":"steel","armor_bonus":5,"max_dex":3,"acp":-4,"asf_percent":25,"weight_lb":30,"cost_gp":200,"hardness":10,"hp":30,"allows_armor_spikes":true,"allows_shield_spikes":false,"source":"PHB"},
+  {"id":"ARM_FULL_PLATE","name":"Full Plate","kind":"armor","category":"heavy","base_material":"steel","armor_bonus":8,"max_dex":1,"acp":-6,"asf_percent":35,"weight_lb":50,"cost_gp":1500,"hardness":10,"hp":40,"allows_armor_spikes":true,"allows_shield_spikes":false,"source":"PHB"},
+  {"id":"SH_HEAVY_STEEL","name":"Heavy Steel Shield","kind":"shield","category":"shield","base_material":"steel","shield_bonus":2,"acp":-2,"asf_percent":15,"weight_lb":15,"cost_gp":20,"hardness":10,"hp":20,"allows_shield_spikes":true,"source":"PHB"},
+  {"id":"SH_HEAVY_WOOD","name":"Heavy Wooden Shield","kind":"shield","category":"shield","base_material":"wood","shield_bonus":2,"acp":-2,"asf_percent":15,"weight_lb":10,"cost_gp":7,"hardness":5,"hp":15,"allows_shield_spikes":false,"source":"SRD"}
 ]

@@ -1,4 +1,1 @@
-[
-  {"id":"AB_FORT_LIGHT","name":"Fortification, Light","+equiv":1,"slot":"armor","prereq_enh_min":1,"source":"DMG"},
-  {"id":"AB_ANIMATED","name":"Animated","+equiv":2,"slot":"shield","prereq_enh_min":1,"source":"DMG"}
-]
+[{"id":"AB_FORT_LIGHT","name":"Fortification, Light","+equiv":1,"slot":"armor","prereq_enh_min":1,"source":"DMG"},{"id":"AB_ANIMATED","name":"Animated","+equiv":2,"slot":"shield","prereq_enh_min":1,"source":"DMG"}]

@@ -1,0 +1,7 @@
+REPLACE YOUR REPO (no code):
+1) GitHub → your repo → Add file → Upload files
+2) Unzip this pack locally
+3) Drag folders: planner, armor_shields, config, docs, schemas
+4) Commit changes
+5) In Lovable, open docs/ENGINE_SETUP.txt, copy all, paste into instructions, fix RAW path, Save
+6) Run /plan_inputs → review → /generate_loot

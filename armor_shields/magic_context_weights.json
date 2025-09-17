@@ -1,7 +1,1 @@
-{
-  "version":1,
-  "deltas":[
-    {"tags_any":["armory"],"p_delta":10},
-    {"tags_any":["undead"],"p_delta":-5}
-  ]
-}
+{"version":1,"deltas":[{"tags_any":["armory"],"p_delta":10},{"tags_any":["undead"],"p_delta":-5}]}

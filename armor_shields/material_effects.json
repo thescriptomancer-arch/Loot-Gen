@@ -1,10 +1,10 @@
 {
   "version":1,
-  "notes":"Material deltas applied after base item (Step 1) and before Size (Step 3).",
+  "notes":"Global tweaks for materials and aging interactions.",
   "per_pound_materials":["darkwood"],
   "aging_overrides":[
     {"material_id":"MAT_ADAMANTINE","immune":["corrosion","rot"],"hardness_floor":20},
-    {"material_id":"MAT_MITHRAL","resist":["corrosion"],"asf_pct_delta_max":0},
+    {"material_id":"MAT_MITHRAL","resist":["corrosion"]},
     {"material_id":"MAT_DARKSTEEL","resist":["corrosion"]},
     {"material_id":"MAT_GOLD_TREATED","vulnerable":["corrosion"],"weight_mult_min":2.0}
   ]

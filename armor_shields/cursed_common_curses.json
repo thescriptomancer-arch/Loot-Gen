@@ -1,3 +1,1 @@
-[
-  {"id":"CURSE_INTERMITTENT","label":"Intermittent (50% to function)","mechanic":"chance","value":50,"source":"DMG"}
-]
+[{"id":"CURSE_INTERMITTENT","label":"Intermittent (50% to function)","mechanic":"chance","value":50,"source":"DMG"}]

@@ -1,11 +1,1 @@
-{
-  "version":1,
-  "ego_points":{
-    "per_enhancement":1,
-    "per_effective_bonus":1,
-    "telepathy":1,
-    "read_magic":1,
-    "read_languages":1,
-    "mental_over_10_per_point":1
-  }
-}
+{"version":1,"ego_points":{"per_enhancement":1,"per_effective_bonus":1,"telepathy":1,"read_magic":1,"read_languages":1,"mental_over_10_per_point":1}}

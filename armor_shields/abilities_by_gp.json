@@ -1,4 +1,1 @@
-[
-  {"id":"AB_GLAMERED","name":"Glamered","flat_gp":1800,"slot":"armor|shield","prereq_enh_min":1,"source":"DMG"},
-  {"id":"AB_SHADOW","name":"Shadow","+skill":{"Hide":5},"flat_gp":3750,"slot":"armor","tier":"shadow","prereq_enh_min":1,"source":"DMG"}
-]
+[{"id":"AB_GLAMERED","name":"Glamered","flat_gp":1800,"slot":"armor|shield","prereq_enh_min":1,"source":"DMG"},{"id":"AB_SHADOW","name":"Shadow","+skill":{"Hide":5},"flat_gp":3750,"slot":"armor","tier":"shadow","prereq_enh_min":1,"source":"DMG"}]

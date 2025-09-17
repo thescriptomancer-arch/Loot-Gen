@@ -1,8 +1,5 @@
 {
   "version":1,
-  "profiles":{
-    "rising":{"label":"Rising","splits":[32,28,25,15]},
-    "flat":{"label":"Flat","splits":[25,25,25,25]}
-  },
+  "profiles":{"rising":{"label":"Rising","splits":[32,28,25,15]},"flat":{"label":"Flat","splits":[25,25,25,25]}},
   "apl_to_gp":{"1":4000,"2":6000,"3":9000,"4":13000,"5":18000}
 }

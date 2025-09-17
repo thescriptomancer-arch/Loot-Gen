@@ -1,0 +1,21 @@
+{
+  "$schema":"http://json-schema.org/draft-07/schema#",
+  "title":"ConstructionQuality",
+  "type":"object",
+  "required":["id","label"],
+  "properties":{
+    "id":{"type":"string"},
+    "label":{"type":"string"},
+    "is_homebrew":{"type":"boolean"},
+    "applies_to":{"type":"array","items":{"enum":["armor","shield"]}},
+    "substrate":{"type":"string"},
+    "exclusive_group":{"type":"string"},
+    "is_masterwork":{"type":"boolean"},
+    "cost_add_gp":{"type":"number"},
+    "cost_mult":{"type":"number"},
+    "hardness_delta":{"type":"number"},
+    "hp_delta":{"type":"number"},
+    "acp_delta":{"type":"number"},
+    "notes":{"type":"string"}
+  }
+}

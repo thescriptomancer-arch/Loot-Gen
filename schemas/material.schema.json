@@ -1,0 +1,24 @@
+{
+  "$schema":"http://json-schema.org/draft-07/schema#",
+  "title":"Material",
+  "type":"object",
+  "required":["id","name","substrate","applies_to","pricing_rule"],
+  "properties":{
+    "id":{"type":"string"},
+    "name":{"type":"string"},
+    "is_homebrew":{"type":"boolean"},
+    "is_setting_specific":{"type":"string"},
+    "substrate":{"enum":["metal","wood","hide","cloth","bone","stone","other"]},
+    "applies_to":{"type":"array","items":{"enum":["armor","shield"]}},
+    "pricing_rule":{"enum":["NO_CHANGE","ADDERS_BY_CATEGORY","DOUBLE_MASTERWORK","PER_POUND_PLUS_MASTERWORK","FLAT_ADDER","COST_MULT"]},
+    "category_adders_gp":{"type":"object","additionalProperties":{"type":"number"}},
+    "flat_gp":{"type":"number"},
+    "cost_mult":{"type":"number"},
+    "effects":{"type":"object"},
+    "effects_shield":{"type":"object"},
+    "constraints":{"type":"object"},
+    "exclusions":{"type":"object"},
+    "notes":{"type":"string"},
+    "source":{"type":"string"}
+  }
+}

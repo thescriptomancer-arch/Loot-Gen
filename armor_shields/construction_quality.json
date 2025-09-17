@@ -1,5 +1,9 @@
 [
   {"id":"CQ_STANDARD","label":"Standard","applies_to":["armor","shield"],"substrate":"any","is_masterwork":false,"cost_add_gp":0},
   {"id":"CQ_MASTERWORK","label":"Masterwork","applies_to":["armor","shield"],"substrate":"any","is_masterwork":true,"cost_add_gp":150,"acp_delta":0},
-  {"id":"CQ_DWARVENCRAFT","label":"Dwarvencraft","applies_to":["armor","shield"],"substrate":"metal","rarity_weight":0.5,"cost_mult":2.0,"hardness_delta":2,"hp_delta":10}
+  {"id":"CQ_DWARVENCRAFT","label":"Dwarvencraft","applies_to":["armor","shield"],"substrate":"metal","rarity_weight":0.5,"cost_mult":2.0,"hardness_delta":2,"hp_delta":10},
+
+  {"id":"CQ_GENERATIONAL_I","label":"Generational Work I (Homebrew)","is_homebrew":true,"applies_to":["armor","shield"],"substrate":"any","exclusive_group":"construction_quality","cost_mult":1.25,"hardness_delta":1,"hp_delta":5,"notes":"Heirloom craft, minor durability boost."},
+  {"id":"CQ_GENERATIONAL_II","label":"Generational Work II (Homebrew)","is_homebrew":true,"applies_to":["armor","shield"],"substrate":"any","exclusive_group":"construction_quality","cost_mult":1.5,"hardness_delta":2,"hp_delta":10,"acp_delta":1,"notes":"Refined techniques reduce encumbrance slightly (ACP +1 toward 0)."},
+  {"id":"CQ_GENERATIONAL_III","label":"Generational Work III (Homebrew)","is_homebrew":true,"applies_to":["armor","shield"],"substrate":"any","exclusive_group":"construction_quality","cost_mult":2.0,"hardness_delta":3,"hp_delta":15,"acp_delta":1,"notes":"Master lineage; robust make and fit. ACP +1 toward 0."}
 ]

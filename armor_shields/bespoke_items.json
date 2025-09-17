@@ -1,0 +1,13 @@
+{
+  "schema_version": 1,
+  "items": [
+    {"id":"BESPOKE_RHINO_HIDE","name":"Rhino Hide","slot":"armor","base":"hide","enhancement":2,"special_ids":["BESPOKE_RHINO_CHARGE"],"gp_total":5165,"size":"Medium","source":{"book":"DMG (3.5e)","page":null}},
+    {"id":"BESPOKE_PLATE_OF_THE_DEEP","name":"Plate Armor of the Deep","slot":"armor","base":"full plate","enhancement":1,"special_ids":["BESPOKE_DEEP_SEA"],"gp_total":24000,"size":"Medium","source":{"book":"DMG (3.5e)","page":null}},
+    {"id":"BESPOKE_LIONS_SHIELD","name":"Lion's Shield","slot":"shield","base":"heavy steel shield","enhancement":2,"special_ids":["BESPOKE_LION_BASH"],"gp_total":9009,"size":"Medium","source":{"book":"DMG (3.5e)","page":null}}
+  ],
+  "special_refs":[
+    {"id":"BESPOKE_RHINO_CHARGE","label":"Rhino Charge (ref)"},
+    {"id":"BESPOKE_DEEP_SEA","label":"Undersea Adaptation (ref)"},
+    {"id":"BESPOKE_LION_BASH","label":"Lion Bash (ref)"}
+  ]
+}

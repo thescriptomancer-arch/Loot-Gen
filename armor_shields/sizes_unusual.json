@@ -1,5 +1,1 @@
-{
-  "version":1,
-  "notes":"Used for tooltip & advanced cases",
-  "weights":{"Tiny":2,"Huge":1}
-}
+{"version":1,"weights":{"Tiny":2,"Huge":1}}
