@@ -36,6 +36,7 @@
 - **Mithral**: counts one category lighter; ACP +2; Max Dex +2; ASF −10; weight ×0.5.  
 - **Magic cap**: enhancement + total effective bonus ≤ **+10**.  
 - **Magic pricing**: (bonus_total²)×1000 + Σ(flat gp); add mundane afterward.
+- Magic validation: each chosen ability must have aura, cl, prereqs (and activation if applicable) or generation fails with an error showing id/file/missing field.
 
 ## Naming
 - **Canonical**: `[+N] [prefix…] [material?] <base> [of suffix…]` (e.g., `+1 glamered adamantine full plate of light fortification`).  
@@ -46,6 +47,20 @@
 - Armor & Shields JSONs: `armor_shields/*.json` (core + shards)  
 - Ability naming: `armor_shields/ability_naming.json`  
 - Feature flags: `config/feature_flags.json`
+- Two registries:
+  - armor_shields/abilities_by_bonus.json  (+equiv entries)
+  - armor_shields/abilities_by_gp.json     (flat_gp entries)
+- Required metadata for generation:
+  - aura (string), cl (integer), prereqs (string[])
+  - activation { type, method?, frequency?, duration? } when applicable
+  - notes (concise one-liner), source (existing field)
+- Authoring:
+  - Keep each JSON object to a single line for quick review.
+  - IDs are canonical and MUST NOT change; engine indexes by `id`.
+- Synergy/supersedence:
+  - If an entry upgrades/replaces another (e.g., “, Improved” / “, Greater”), set
+    "synergy": { "requires_id": "<base_id>", "supersedes": true } or
+    "requires_one_of": [ids...] as needed.
 
 ## Updating content (no code)
 - To add materials from another book, drop a new file like `armor_shields/materials.<book>.json`.  
