@@ -20,6 +20,7 @@ FILES TO LOAD (JSON)
                             {RAW}/armor_shields/construction_quality.json
                             {RAW}/armor_shields/abilities_by_bonus.json
                             {RAW}/armor_shields/abilities_by_gp.json
+                            {RAW}/armor_shields/augment_crystals.json
                             {RAW}/armor_shields/magic_baseline.json
                             {RAW}/armor_shields/magic_context_weights.json
                             {RAW}/armor_shields/intelligent_chance.json
