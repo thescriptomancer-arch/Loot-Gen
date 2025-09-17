@@ -39,6 +39,14 @@
   {"id":"AB_BLUESHINE","name":"Blueshine","flat_gp":1500,"slot":"armor","prereq_enh_min":0,"notes":"Metal armor only","source":"MIC"},
   {"id":"AB_EASY_TRAVEL","name":"Easy Travel","flat_gp":1500,"slot":"armor","prereq_enh_min":0,"source":"MIC"},
   {"id":"AB_DAYLIGHT","name":"Daylight","flat_gp":3000,"slot":"armor|shield","prereq_enh_min":0,"source":"MIC"},
-  {"id":"AB_HEALING","name":"Healing","flat_gp":8000,"slot":"armor","prereq_enh_min":0,"activation":"swift/command (per MIC)","source":"MIC"}
+  {"id":"AB_HEALING","name":"Healing","flat_gp":8000,"slot":"armor","prereq_enh_min":0,"activation":"swift/command (per MIC)","source":"MIC"},
+
+  {"id": "AB_LANDING","name": "Landing","flat_gp": 4000,"slot": "armor","prereq_enh_min": 0,"notes": "Ignore first 60 ft. of falling; land on feet (per MIC).","source": "MIC"},
+  {"id": "AB_LINKED","name": "Linked","flat_gp": 6000,"slot": "armor|shield","prereq_enh_min": 0,"uses_per_day": 3,"notes": "Telepathic link with other linked items within 10 miles for 1 hour 3 times a day.","source": "MIC"},
+  {"id": "AB_MINDARMOR","name": "Mindarmor","flat_gp": 3000,"slot": "armor|shield","prereq_enh_min": 0,"uses_per_day": 3,"notes": "+5 insight on Will vs mind-affecting until start of your next turn.","source": "MIC"},
+  {"id": "AB_MAGIC_EATING","name": "Magic-Eating","flat_gp": 10000,"slot": "armor","prereq_enh_min": 0,"notes": "Consumes spell energy to power effects (per MIC).","source": "MIC"},
+  {"id": "AB_HEARTENING","name": "Heartening","flat_gp": 2000,"slot": "shield","prereq_enh_min": 0,"uses_per_day": 2,"notes": "Immediate action; grants 5 temp hp (non-stacking) for up to 5 minutes.","source": "MIC"},
+  {"id": "AB_MANIFESTER","name": "Manifester","flat_gp": 6000,"slot": "shield","prereq_enh_min": 0,"uses_per_day": 1,"notes": "Stores 3 PP; expend to manifest a set power (per MIC).","source": "MIC"},
+  {"id": "AB_BUOYANT","name": "Buoyant","flat_gp": 4000,"slot": "armor","prereq_enh_min": 0,"notes": "No ACP on Swim; +2 competence bonus on Swim checks.","source": "MIC"}
 
 ]
