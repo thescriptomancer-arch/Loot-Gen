@@ -37,6 +37,7 @@
 - **Magic cap**: enhancement + total effective bonus ≤ **+10**.  
 - **Magic pricing**: (bonus_total²)×1000 + Σ(flat gp); add mundane afterward.
 - Magic validation: each chosen ability must have aura, cl, prereqs (and activation if applicable) or generation fails with an error showing id/file/missing field.
+- Augment crystals: 1 per armor/shield max; flat GP add-on; no effect on +bonus cap
 
 ## Naming
 - **Canonical**: `[+N] [prefix…] [material?] <base> [of suffix…]` (e.g., `+1 glamered adamantine full plate of light fortification`).  
@@ -61,6 +62,11 @@
   - If an entry upgrades/replaces another (e.g., “, Improved” / “, Greater”), set
     "synergy": { "requires_id": "<base_id>", "supersedes": true } or
     "requires_one_of": [ids...] as needed.
+- Augment crystals:
+  -   armor_shields/augment_crystals.json (armor/shield only) — each row must include:
+id (canonical), name, slot ("armor"|"shield"|"either"), tier ("least"|"lesser"|"greater"), gp (flat), aura, cl, prereqs (string[]), activation (if any), effect (short one-liner), source. The engine equips at most one crystal per item and applies its flat GP after magic pricing. Crystals never count toward the +10 cap.
+Examples: clasp_of_energy_protection_[acid|cold|elec|fire|sonic]_[least|lesser|greater], crystal_of_adamant_armor_[least|lesser|greater], iron_ward_diamond_[least|lesser|greater], etc.
+
 
 ## Updating content (no code)
 - To add materials from another book, drop a new file like `armor_shields/materials.<book>.json`.  
