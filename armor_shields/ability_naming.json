@@ -22,5 +22,39 @@
   {"id": "AB_TWILIGHT","display": "twilight","name_form": "prefix-adj","slot": "armor"},
   {"id": "AB_SOULFIRE","display": "soulfire","name_form": "suffix-of","slot": "armor"},
   {"id": "AB_GHOST_WARD","display": "ghost ward","name_form": "suffix-of","slot": "armor|shield"},
-  {"id": "AB_WILD","display": "wild","name_form": "suffix-of","slot": "armor"}
+  {"id": "AB_WILD","display": "wild","name_form": "suffix-of","slot": "armor"},
+  
+  {"id":"AB_BLUESHINE","display":"blueshine","name_form":"prefix-adj","slot":"armor"},
+  {"id":"AB_EASY_TRAVEL","display":"easy travel","name_form":"suffix-of","slot":"armor"},
+  {"id":"AB_DAYLIGHT","display":"daylight","name_form":"suffix-of","slot":"armor|shield"},
+  {"id":"AB_HEALING","display":"healing","name_form":"suffix-of","slot":"armor"},
+
+  {"id":"AB_LANDING","display":"landing","name_form":"suffix-of","slot":"armor"},
+  {"id":"AB_LINKED","display":"linked","name_form":"suffix-of","slot":"armor|shield"},
+  {"id":"AB_MINDARMOR","display":"mindarmor","name_form":"suffix-of","slot":"armor|shield"},
+  {"id":"AB_MAGIC_EATING","display":"magic-eating","name_form":"suffix-of","slot":"armor"},
+  {"id":"AB_HEARTENING","display":"heartening","name_form":"suffix-of","slot":"shield"},
+  {"id":"AB_MANIFESTER","display":"manifester","name_form":"suffix-of","slot":"shield"},
+  {"id":"AB_BUOYANT","display":"buoyant","name_form":"prefix-adj","slot":"armor"},
+
+  {"id":"AB_RESIST_ACID_10","display":"acid resistance 10","name_form":"suffix-of","slot":"armor|shield"},
+  {"id":"AB_RESIST_ACID_20","display":"acid resistance 20","name_form":"suffix-of","slot":"armor|shield"},
+  {"id":"AB_RESIST_ACID_30","display":"acid resistance 30","name_form":"suffix-of","slot":"armor|shield"},
+
+  {"id":"AB_RESIST_COLD_10","display":"cold resistance 10","name_form":"suffix-of","slot":"armor|shield"},
+  {"id":"AB_RESIST_COLD_20","display":"cold resistance 20","name_form":"suffix-of","slot":"armor|shield"},
+  {"id":"AB_RESIST_COLD_30","display":"cold resistance 30","name_form":"suffix-of","slot":"armor|shield"},
+
+  {"id":"AB_RESIST_ELEC_10","display":"electricity resistance 10","name_form":"suffix-of","slot":"armor|shield"},
+  {"id":"AB_RESIST_ELEC_20","display":"electricity resistance 20","name_form":"suffix-of","slot":"armor|shield"},
+  {"id":"AB_RESIST_ELEC_30","display":"electricity resistance 30","name_form":"suffix-of","slot":"armor|shield"},
+
+  {"id":"AB_RESIST_FIRE_10","display":"fire resistance 10","name_form":"suffix-of","slot":"armor|shield"},
+  {"id":"AB_RESIST_FIRE_20","display":"fire resistance 20","name_form":"suffix-of","slot":"armor|shield"},
+  {"id":"AB_RESIST_FIRE_30","display":"fire resistance 30","name_form":"suffix-of","slot":"armor|shield"},
+
+  {"id":"AB_RESIST_SONIC_10","display":"sonic resistance 10","name_form":"suffix-of","slot":"armor|shield"},
+  {"id":"AB_RESIST_SONIC_20","display":"sonic resistance 20","name_form":"suffix-of","slot":"armor|shield"},
+  {"id":"AB_RESIST_SONIC_30","display":"sonic resistance 30","name_form":"suffix-of","slot":"armor|shield"}
+
 ]
