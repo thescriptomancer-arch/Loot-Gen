@@ -1,20 +1,38 @@
 [
-  {"id":"AB_FORT_LIGHT","name":"Fortification, Light","+equiv":1,"slot":"armor|shield","prereq_enh_min":1,"source":"SRD"},
-  {"id":"AB_FORT_MED","name":"Fortification, Moderate","+equiv":3,"slot":"armor|shield","prereq_enh_min":1,"source":"SRD"},
-  {"id":"AB_FORT_HEAVY","name":"Fortification, Heavy","+equiv":5,"slot":"armor|shield","prereq_enh_min":1,"source":"SRD"},
-  {"id":"AB_GHOST_TOUCH","name":"Ghost touch","+equiv":3,"slot":"armor|shield","prereq_enh_min":1,"source":"SRD"},
-  {"id":"AB_INVULNERABILITY","name":"Invulnerability","+equiv":3,"slot":"armor","prereq_enh_min":1,"source":"SRD"},
-  {"id":"AB_WILD","name":"Wild","+equiv":3,"slot":"armor|shield","prereq_enh_min":1,"source":"SRD"},
+  {"id":"AB_GLAMERED","name":"Glamered","flat_gp":2700,"slot":"armor","prereq_enh_min":1,"source":"SRD"},
 
-  {"id":"AB_ARROW_CATCHING","name":"Arrow catching","+equiv":1,"slot":"shield","prereq_enh_min":1,"source":"SRD"},
-  {"id":"AB_BLINDING","name":"Blinding","+equiv":1,"slot":"shield","prereq_enh_min":1,"source":"SRD"},
-  {"id":"AB_ARROW_DEFLECTION","name":"Arrow deflection","+equiv":2,"slot":"shield","prereq_enh_min":1,"source":"SRD"},
-  {"id":"AB_ANIMATED","name":"Animated","+equiv":2,"slot":"shield","prereq_enh_min":1,"source":"SRD"},
-  {"id":"AB_BASHING","name":"Bashing","+equiv":1,"slot":"shield","prereq_enh_min":1,"source":"SRD"},
-  {"id":"AB_REFLECTING","name":"Reflecting","+equiv":5,"slot":"shield","prereq_enh_min":1,"source":"SRD"},
+  {"id":"AB_SLICK","name":"Slick","+skill":{"Escape Artist":5},"flat_gp":3750,"slot":"armor","tier":"slick","prereq_enh_min":1,"source":"SRD"},
+  {"id":"AB_SLICK_IMP","name":"Slick, improved","+skill":{"Escape Artist":10},"flat_gp":15000,"slot":"armor","tier":"improved slick","prereq_enh_min":1,"source":"SRD"},
+  {"id":"AB_SLICK_GR","name":"Slick, greater","+skill":{"Escape Artist":15},"flat_gp":33750,"slot":"armor","tier":"greater slick","prereq_enh_min":1,"source":"SRD"},
 
-  {"id":"AB_SPELL_RESIST_13","name":"Spell resistance (13)","+equiv":2,"slot":"armor|shield","prereq_enh_min":1,"source":"SRD"},
-  {"id":"AB_SPELL_RESIST_15","name":"Spell resistance (15)","+equiv":3,"slot":"armor|shield","prereq_enh_min":1,"source":"SRD"},
-  {"id":"AB_SPELL_RESIST_17","name":"Spell resistance (17)","+equiv":4,"slot":"armor|shield","prereq_enh_min":1,"source":"SRD"},
-  {"id":"AB_SPELL_RESIST_19","name":"Spell resistance (19)","+equiv":5,"slot":"armor|shield","prereq_enh_min":1,"source":"SRD"}
+  {"id":"AB_SHADOW","name":"Shadow","+skill":{"Hide":5},"flat_gp":3750,"slot":"armor","tier":"shadow","prereq_enh_min":1,"source":"SRD"},
+  {"id":"AB_SHADOW_IMP","name":"Shadow, improved","+skill":{"Hide":10},"flat_gp":15000,"slot":"armor","tier":"improved shadow","prereq_enh_min":1,"source":"SRD"},
+  {"id":"AB_SHADOW_GR","name":"Shadow, greater","+skill":{"Hide":15},"flat_gp":33750,"slot":"armor","tier":"greater shadow","prereq_enh_min":1,"source":"SRD"},
+
+  {"id":"AB_SILENT","name":"Silent moves","+skill":{"Move Silently":5},"flat_gp":3750,"slot":"armor","tier":"silent moves","prereq_enh_min":1,"source":"SRD"},
+  {"id":"AB_SILENT_IMP","name":"Silent moves, improved","+skill":{"Move Silently":10},"flat_gp":15000,"slot":"armor","tier":"improved silent moves","prereq_enh_min":1,"source":"SRD"},
+  {"id":"AB_SILENT_GR","name":"Silent moves, greater","+skill":{"Move Silently":15},"flat_gp":33750,"slot":"armor","tier":"greater silent moves","prereq_enh_min":1,"source":"SRD"},
+
+  {"id":"AB_RESIST_ACID_10","name":"Acid resistance 10","flat_gp":18000,"slot":"armor|shield","prereq_enh_min":1,"source":"SRD"},
+  {"id":"AB_RESIST_ACID_20","name":"Acid resistance 20","flat_gp":42000,"slot":"armor|shield","prereq_enh_min":1,"source":"SRD"},
+  {"id":"AB_RESIST_ACID_30","name":"Acid resistance 30","flat_gp":66000,"slot":"armor|shield","prereq_enh_min":1,"source":"SRD"},
+
+  {"id":"AB_RESIST_COLD_10","name":"Cold resistance 10","flat_gp":18000,"slot":"armor|shield","prereq_enh_min":1,"source":"SRD"},
+  {"id":"AB_RESIST_COLD_20","name":"Cold resistance 20","flat_gp":42000,"slot":"armor|shield","prereq_enh_min":1,"source":"SRD"},
+  {"id":"AB_RESIST_COLD_30","name":"Cold resistance 30","flat_gp":66000,"slot":"armor|shield","prereq_enh_min":1,"source":"SRD"},
+
+  {"id":"AB_RESIST_ELEC_10","name":"Electricity resistance 10","flat_gp":18000,"slot":"armor|shield","prereq_enh_min":1,"source":"SRD"},
+  {"id":"AB_RESIST_ELEC_20","name":"Electricity resistance 20","flat_gp":42000,"slot":"armor|shield","prereq_enh_min":1,"source":"SRD"},
+  {"id":"AB_RESIST_ELEC_30","name":"Electricity resistance 30","flat_gp":66000,"slot":"armor|shield","prereq_enh_min":1,"source":"SRD"},
+
+  {"id":"AB_RESIST_FIRE_10","name":"Fire resistance 10","flat_gp":18000,"slot":"armor|shield","prereq_enh_min":1,"source":"SRD"},
+  {"id":"AB_RESIST_FIRE_20","name":"Fire resistance 20","flat_gp":42000,"slot":"armor|shield","prereq_enh_min":1,"source":"SRD"},
+  {"id":"AB_RESIST_FIRE_30","name":"Fire resistance 30","flat_gp":66000,"slot":"armor|shield","prereq_enh_min":1,"source":"SRD"},
+
+  {"id":"AB_RESIST_SONIC_10","name":"Sonic resistance 10","flat_gp":18000,"slot":"armor|shield","prereq_enh_min":1,"source":"SRD"},
+  {"id":"AB_RESIST_SONIC_20","name":"Sonic resistance 20","flat_gp":42000,"slot":"armor|shield","prereq_enh_min":1,"source":"SRD"},
+  {"id":"AB_RESIST_SONIC_30","name":"Sonic resistance 30","flat_gp":66000,"slot":"armor|shield","prereq_enh_min":1,"source":"SRD"},
+
+  {"id":"AB_ETHEREALNESS","name":"Etherealness","flat_gp":49000,"slot":"armor","prereq_enh_min":1,"source":"SRD"},
+  {"id":"AB_UNDEAD_CONTROL","name":"Undead controlling","flat_gp":49000,"slot":"armor|shield","prereq_enh_min":1,"source":"SRD"}
 ]
