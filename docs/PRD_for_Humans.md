@@ -81,7 +81,14 @@ Examples: clasp_of_energy_protection_[acid|cold|elec|fire|sonic]_[least|lesser|g
 - **A magical item** shows **Magic price = (bonus_total²)×1000 + Σ(flat gp)**.
 
 ## Out of scope right now
-- Weapons, Wands, Staves, etc. (placeholders in UI only).  
+- Weapons, Wands, Staves, etc. (placeholders in UI only).
+
+ ## Data files (Armor & Shields)
+- Base abilities: {RAW}/armor_shields/abilities_by_bonus.json
+- Flat-gp abilities: {RAW}/armor_shields/abilities_by_gp.json
+- Ability naming map: {RAW}/armor_shields/ability_naming.json
+- **IDs registry (validation only): {RAW}/ids_registry.json**  
+  Used to (1) resolve names → canonical IDs, (2) enforce `strict_dmg` filtering, and (3) ensure every referenced ability is known.
 - Full SRD text reprints (we reference by id; we don’t ship rule text).
 
 ## Roadmap (next)
