@@ -28,6 +28,7 @@ FILES TO LOAD (JSON)
                             {RAW}/armor_shields/cursed_chance.json
                             {RAW}/armor_shields/cursed_common_curses.json
                             {RAW}/armor_shields/ability_naming.json
+- IDs registry (validation only): {RAW}/ids_registry.json
 - Optional shards (load iff present/flagged):
                             {RAW}/armor_shields/materials.faerun.json       (if enable_faerun_materials)
                             {RAW}/armor_shields/materials.homebrew.json      (if file exists)
@@ -85,6 +86,9 @@ Pipeline (deterministic; obey flags):
 3) Size → apply size rules; **Tiny-or-smaller armor halves base AC (round down)**; finalize per‑pound after this step.
 4) Construction Quality → exclusive pick; masterwork gating; **ACP +1 toward 0 applied once globally**.
 5) Magic Planner → if magical:
+- Name → ID resolution: if any input references an ability by name, normalize via ability_naming.json, then resolve to a canonical ID using ids_registry.json. If missing, reject with “Unknown ability name”.
+- Source guard: when strict_dmg = true, only allow abilities whose ids_registry entry has source ∈ {DMG, SRD}.
+- Cross-file integrity: every ability id used from abilities_by_bonus.json / abilities_by_gp.json MUST exist in ids_registry.json.
 - Build registry indexed by `id` (do not rewrite IDs).
 - Validate each selected ability has aura, cl, prereqs; include activation/notes when present.
 - Apply synergy/supersedence if defined.
