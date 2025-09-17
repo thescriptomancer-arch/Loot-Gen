@@ -18,5 +18,29 @@
   {"id":"AB_SPELL_RES_17","display":"spell resistance 17","name_form":"suffix-of","slot":"armor"},
   {"id":"AB_SPELL_RES_19","display":"spell resistance 19","name_form":"suffix-of","slot":"armor"},
   {"id":"AB_ETHEREALNESS","display":"etherealness","name_form":"suffix-of","slot":"armor"},
-  {"id":"AB_UNDEAD_CONTROL","display":"undead controlling","name_form":"suffix-of","slot":"armor|shield"}
+  {"id":"AB_UNDEAD_CONTROL","display":"undead controlling","name_form":"suffix-of","slot":"armor|shield"},
+  {
+  "id": "AB_TWILIGHT",
+  "display": "twilight",
+  "name_form": "prefix-adj",
+  "slot": "armor"
+},
+{
+  "id": "AB_SOULFIRE",
+  "display": "soulfire",
+  "name_form": "suffix-of",
+  "slot": "armor"
+},
+{
+  "id": "AB_GHOST_WARD",
+  "display": "ghost ward",
+  "name_form": "suffix-of",
+  "slot": "armor|shield"
+},
+{
+  "id": "AB_WILD",
+  "display": "wild",
+  "name_form": "suffix-of",
+  "slot": "armor"
+}
 ]
