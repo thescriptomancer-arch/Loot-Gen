@@ -34,5 +34,11 @@
   {"id":"AB_RESIST_SONIC_30","name":"Sonic resistance 30","flat_gp":66000,"slot":"armor|shield","prereq_enh_min":1,"source":"SRD"},
 
   {"id":"AB_ETHEREALNESS","name":"Etherealness","flat_gp":49000,"slot":"armor","prereq_enh_min":1,"source":"SRD"},
-  {"id":"AB_UNDEAD_CONTROL","name":"Undead controlling","flat_gp":49000,"slot":"armor|shield","prereq_enh_min":1,"source":"SRD"}
+  {"id":"AB_UNDEAD_CONTROL","name":"Undead controlling","flat_gp":49000,"slot":"armor|shield","prereq_enh_min":1,"source":"SRD"},
+
+  {"id":"AB_BLUESHINE","name":"Blueshine","flat_gp":1500,"slot":"armor","prereq_enh_min":0,"notes":"Metal armor only","source":"MIC"},
+  {"id":"AB_EASY_TRAVEL","name":"Easy Travel","flat_gp":1500,"slot":"armor","prereq_enh_min":0,"source":"MIC"},
+  {"id":"AB_DAYLIGHT","name":"Daylight","flat_gp":3000,"slot":"armor|shield","prereq_enh_min":0,"source":"MIC"},
+  {"id":"AB_HEALING","name":"Healing","flat_gp":8000,"slot":"armor","prereq_enh_min":0,"activation":"swift/command (per MIC)","source":"MIC"}
+
 ]
