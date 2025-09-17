@@ -1,11 +1,13 @@
 [
-  {"id":"glamered","display":"glamered","name_form":"prefix-adj"},
-  {"id":"shadow","display":"shadow","name_form":"prefix-adj","tier":["shadow","improved shadow","greater shadow"]},
-  {"id":"slick","display":"slick","name_form":"prefix-adj","tier":["slick","improved slick","greater slick"]},
-  {"id":"animated","display":"animated","name_form":"prefix-adj","slot":"shield"},
-  {"id":"bashing","display":"bashing","name_form":"prefix-adj","slot":"shield"},
-  {"id":"arrow_deflection","display":"arrow deflection","name_form":"suffix-of","slot":"shield"},
-  {"id":"fort_light","display":"light fortification","name_form":"suffix-of","slot":"armor"},
-  {"id":"fort_med","display":"medium fortification","name_form":"suffix-of","slot":"armor"},
-  {"id":"fort_heavy","display":"heavy fortification","name_form":"suffix-of","slot":"armor"}
+  {"id":"AB_SHADOW","display":"shadow","name_form":"prefix-adj",
+   "tier":["shadow","improved shadow","greater shadow"],"slot":"armor"},
+  {"id":"AB_SLICK","display":"slick","name_form":"prefix-adj",
+   "tier":["slick","improved slick","greater slick"],"slot":"armor"},
+  {"id":"AB_GLAMERED","display":"glamered","name_form":"prefix-adj","slot":"armor"},
+  {"id":"AB_ANIMATED","display":"animated","name_form":"prefix-adj","slot":"shield"},
+  {"id":"AB_BASHING","display":"bashing","name_form":"prefix-adj","slot":"shield"},
+  {"id":"AB_ARROW_DEFLECTION","display":"arrow deflection","name_form":"suffix-of","slot":"shield"},
+  {"id":"AB_FORT_LIGHT","display":"light fortification","name_form":"suffix-of","slot":"armor"},
+  {"id":"AB_FORT_MED","display":"medium fortification","name_form":"suffix-of","slot":"armor"},
+  {"id":"AB_FORT_HEAVY","display":"heavy fortification","name_form":"suffix-of","slot":"armor"}
 ]
