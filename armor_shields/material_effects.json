@@ -1,11 +1,15 @@
 {
-  "version":1,
-  "notes":"Global tweaks for materials and aging interactions.",
-  "per_pound_materials":["darkwood"],
-  "aging_overrides":[
-    {"material_id":"MAT_ADAMANTINE","immune":["corrosion","rot"],"hardness_floor":20},
-    {"material_id":"MAT_MITHRAL","resist":["corrosion"]},
-    {"material_id":"MAT_DARKSTEEL","resist":["corrosion"]},
-    {"material_id":"MAT_GOLD_TREATED","vulnerable":["corrosion"],"weight_mult_min":2.0}
+  "version": 1,
+  "notes": "Global tweaks for materials and aging interactions.",
+  "per_pound_materials": ["darkwood"],
+  "aging_overrides": [
+    { "material_id": "MAT_ADAMANTINE", "immune": ["corrosion","rot"], "hardness_floor": 20 },
+    { "material_id": "MAT_MITHRAL", "resist": ["corrosion"] },
+    { "material_id": "MAT_DARKSTEEL", "resist": ["corrosion"] },
+    { "material_id": "MAT_GOLD_TREATED", "vulnerable": ["corrosion"], "weight_mult_min": 2.0 }
+  ],
+  "encounter_hooks": [
+    { "material_id": "MAT_ALCHEMICAL_SILVER_ARMOR", "vs_tag": "lycanthrope", "grapple_bonus": 1, "note": "Optional hook; engine may ignore if not implemented." },
+    { "material_id": "MAT_COLD_IRON_ARMOR", "vs_tag": "fey", "grapple_bonus": 1, "note": "Optional hook; engine may ignore if not implemented." }
   ]
 }
