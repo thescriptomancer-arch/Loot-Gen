@@ -1,1 +1,4 @@
-[{"size":"Small","weight_percent":25},{"size":"Medium","weight_percent":55},{"size":"Large","weight_percent":15},{"size":"Tiny","weight_percent":3},{"size":"Huge","weight_percent":2}]
+{
+  "version":1,
+  "weights":{"Small":10,"Medium":80,"Large":10}
+}

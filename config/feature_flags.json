@@ -1,0 +1,8 @@
+{
+  "enable_aging": true,
+  "enable_faerun_materials": true,
+  "enable_bonded_items": false,
+  "enable_signature_traits": false,
+  "enable_augment_crystals": false,
+  "strict_dmg": false
+}

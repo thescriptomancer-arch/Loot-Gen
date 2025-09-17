@@ -1,0 +1,9 @@
+[
+  {"id":"MAT_STEEL","name":"Steel","substrate":"metal","applies_to":["armor","shield"],"pricing_rule":"NO_CHANGE","effects":{"hardness_override":10}},
+  {"id":"MAT_MITHRAL","name":"Mithral","substrate":"metal","applies_to":["armor","shield"],"auto_masterwork":true,
+   "pricing_rule":"ADDERS_BY_CATEGORY","category_adders_gp":{"light":1000,"medium":4000,"heavy":9000,"shield":1000},
+   "effects":{"treat_category_lighter_by":1,"acp_delta":2,"max_dex_delta":2,"asf_delta":-10,"weight_mult":0.5},"source":"SRD"},
+  {"id":"MAT_ADAMANTINE","name":"Adamantine","substrate":"metal","applies_to":["armor","shield"],"auto_masterwork":true,
+   "pricing_rule":"ADDERS_BY_CATEGORY","category_adders_gp":{"light":5000,"medium":10000,"heavy":15000,"shield":2000},
+   "effects":{"hardness_override":20,"hp_mult":1.333,"dr_by_category":{"light":"1/-","medium":"2/-","heavy":"3/-"}},"source":"SRD"}
+]

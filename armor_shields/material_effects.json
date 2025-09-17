@@ -1,20 +1,11 @@
-[
-  {
-    "id": "ME_ALCH_SILVER_GRAPPLE",
-    "material_id": "MAT_ALCHEMICAL_SILVER_ARMOR_HOME",
-    "applies_when": "any",
-    "stat": "grapple_vs_lycanthropes",
-    "bonus": 1,
-    "stack_group": "species_grapple",
-    "notes": "Homebrew narrative hook: armor worked to bind lycanthropic joints."
-  },
-  {
-    "id": "ME_COLD_IRON_GRAPPLE",
-    "material_id": "MAT_COLD_IRON_ARMOR_HOME",
-    "applies_when": "any",
-    "stat": "grapple_vs_fey",
-    "bonus": 1,
-    "stack_group": "species_grapple",
-    "notes": "Homebrew narrative hook: cold iron studs and channels bite into fey glamers."
-  }
-]
+{
+  "version":1,
+  "notes":"Material deltas applied after base item (Step 1) and before Size (Step 3).",
+  "per_pound_materials":["darkwood"],
+  "aging_overrides":[
+    {"material_id":"MAT_ADAMANTINE","immune":["corrosion","rot"],"hardness_floor":20},
+    {"material_id":"MAT_MITHRAL","resist":["corrosion"],"asf_pct_delta_max":0},
+    {"material_id":"MAT_DARKSTEEL","resist":["corrosion"]},
+    {"material_id":"MAT_GOLD_TREATED","vulnerable":["corrosion"],"weight_mult_min":2.0}
+  ]
+}

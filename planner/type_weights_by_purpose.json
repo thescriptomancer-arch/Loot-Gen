@@ -1,13 +1,10 @@
 {
-  "entry":        {"potions":10,"scrolls":6,"weapons":6,"armor_shield":4,"art":4,"gems":3,"wondrous":3,"jewelry":2,"stones":2},
-  "guardroom":    {"weapons":24,"armor_shield":18,"potions":8,"wondrous":5,"gems":3,"art":2},
-  "armory":       {"armor_shield":30,"weapons":24,"wondrous":6,"potions":4},
-  "library":      {"scrolls":28,"wands":14,"wondrous":10,"gems":4,"art":4},
-  "scriptorium":  {"scrolls":34,"wands":10,"wondrous":8,"potions":4},
-  "laboratory":   {"potions":22,"wands":12,"wondrous":10,"gems":4,"stones":4},
-  "shrine":       {"wondrous":16,"art":12,"jewelry":10,"gems":6,"potions":6},
-  "crypt":        {"gems":14,"stones":12,"wondrous":8,"scrolls":6,"armor_shield":4,"weapons":4},
-  "ossuary":      {"stones":16,"gems":12,"wondrous":6,"scrolls":6},
-  "storage":      {"potions":10,"scrolls":8,"weapons":6,"armor_shield":6,"art":4,"gems":3},
-  "treasury":     {"gems":24,"jewelry":20,"art":16,"wondrous":12,"scrolls":6}
+  "version": 1,
+  "weights": {
+    "library": {"armor_shields": 12, "scrolls": 24, "wands": 12, "gems": 8, "art": 8, "stones": 4},
+    "ritual": {"armor_shields": 18, "wands": 10, "rings": 8, "potions_oils": 10, "gems": 8},
+    "ossuary": {"armor_shields": 22, "gems": 10, "jewelry": 6, "stones": 10},
+    "armory": {"armor_shields": 60, "weapons": 25, "wondrous": 5},
+    "vault": {"armor_shields": 20, "jewelry": 20, "gems": 20, "art": 20, "wondrous": 10}
+  }
 }

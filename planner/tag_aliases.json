@@ -1,14 +1,8 @@
 {
-  "tomb":"crypt",
-  "grave":"crypt",
-  "bone":"undead",
-  "skeleton":"undead",
-  "ghoul":"undead",
-  "zombie":"undead",
-  "book":"library",
-  "scriptorium":"scriptorium",
-  "wizard":"arcane",
-  "mage":"arcane",
-  "temple":"shrine",
-  "vault":"treasury"
+  "version":1,
+  "aliases":{
+    "undead":["ossuary","catacomb","skeleton","zombie"],
+    "ancient-knowledge":["library","archive","scriptorium"],
+    "damp":["mold","wet","bog","sewer","underground"]
+  }
 }

@@ -1,1 +1,7 @@
-[{"key":"monastery","match_type":"keyword","match":"monastery","delta_prob_pct":5,"notes":"disciplined sites more magical"},{"key":"ruin","match_type":"keyword","match":"ruin","delta_prob_pct":-5,"notes":"many damaged mundanes"},{"key":"noble","match_type":"keyword","match":"noble","delta_prob_pct":8,"notes":"wealth bias"},{"key":"witch_hunter","match_type":"keyword","match":"witch hunter","delta_prob_pct":5,"notes":"anti-lycanthrope gear nearby"}]
+{
+  "version":1,
+  "deltas":[
+    {"tags_any":["armory"],"p_delta":10},
+    {"tags_any":["undead"],"p_delta":-5}
+  ]
+}

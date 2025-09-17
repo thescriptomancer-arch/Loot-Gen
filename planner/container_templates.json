@@ -1,0 +1,9 @@
+{
+  "version": 1,
+  "containers": [
+    {"type":"locked-chest","capacity":"M","material":"wood","base_condition":"sound","lock":true,"trap":false},
+    {"type":"reliquary","capacity":"S","material":"bone","base_condition":"sealed","lock":false,"trap":false},
+    {"type":"sarcophagus","capacity":"L","material":"stone","base_condition":"sealed","lock":false,"trap":false},
+    {"type":"secret-compartment","capacity":"XS","material":"wood","base_condition":"sound","lock":true,"trap":false}
+  ]
+}

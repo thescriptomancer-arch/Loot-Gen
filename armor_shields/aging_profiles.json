@@ -1,0 +1,13 @@
+{
+  "profiles":[
+    {"id":"aged_ruin","label":"Ruins — damp/timeworn","severity_curve":[0.20,0.35,0.30,0.12,0.03]},
+    {"id":"sealed_cache","label":"Sealed cache","severity_curve":[0.45,0.35,0.15,0.04,0.01]}
+  ],
+  "tiers":[
+    {"id":"mint","ac_delta":0,"acp_delta":0,"max_dex_delta":0,"asf_pct_delta":0,"hardness_mult":1.0,"hp_mult":1.0,"coin_value_mult":1.0},
+    {"id":"well_kept","ac_delta":0,"acp_delta":0,"max_dex_delta":0,"asf_pct_delta":0,"hardness_mult":0.95,"hp_mult":0.95,"coin_value_mult":0.9},
+    {"id":"weathered","ac_delta":0,"acp_delta":-1,"max_dex_delta":-1,"asf_pct_delta":5,"hardness_mult":0.85,"hp_mult":0.85,"coin_value_mult":0.7},
+    {"id":"corroded_rot","ac_delta":-1,"acp_delta":-2,"max_dex_delta":-1,"asf_pct_delta":10,"hardness_mult":0.7,"hp_mult":0.7,"coin_value_mult":0.5},
+    {"id":"ruined","unusable":true,"coin_value_mult":0.15}
+  ]
+}

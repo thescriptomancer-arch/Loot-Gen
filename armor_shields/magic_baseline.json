@@ -1,1 +1,9 @@
-[{"affordability_bucket":"very_low","min_ratio":-1,"max_ratio":0.10,"base_prob_pct":5,"notes":"barely affordable"},{"affordability_bucket":"low","min_ratio":0.10,"max_ratio":0.25,"base_prob_pct":20,"notes":""},{"affordability_bucket":"medium","min_ratio":0.25,"max_ratio":0.50,"base_prob_pct":40,"notes":""},{"affordability_bucket":"high","min_ratio":0.50,"max_ratio":1.00,"base_prob_pct":65,"notes":""},{"affordability_bucket":"very_high","min_ratio":1.00,"max_ratio":2.00,"base_prob_pct":80,"notes":""},{"affordability_bucket":"overflow","min_ratio":2.00,"max_ratio":99,"base_prob_pct":95,"notes":"tons of budget"}]
+{
+  "version":1,
+  "p_magical_by_affordability":[
+    {"multiple_of_budget":0.4,"p":10},
+    {"multiple_of_budget":0.8,"p":25},
+    {"multiple_of_budget":1.0,"p":40},
+    {"multiple_of_budget":1.4,"p":65}
+  ]
+}
