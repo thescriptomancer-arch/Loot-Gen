@@ -13,10 +13,10 @@
   {"id":"AB_GHOST_TOUCH","display":"ghost touch","name_form":"suffix-of","slot":"armor|shield"},
   {"id":"AB_INVULNERABILITY","display":"invulnerability","name_form":"suffix-of","slot":"armor"},
   {"id":"AB_REFLECTING","display":"reflecting","name_form":"suffix-of","slot":"shield"},
-  {"id":"AB_SPELL_RES_13","display":"spell resistance 13","name_form":"suffix-of","slot":"armor"},
-  {"id":"AB_SPELL_RES_15","display":"spell resistance 15","name_form":"suffix-of","slot":"armor"},
-  {"id":"AB_SPELL_RES_17","display":"spell resistance 17","name_form":"suffix-of","slot":"armor"},
-  {"id":"AB_SPELL_RES_19","display":"spell resistance 19","name_form":"suffix-of","slot":"armor"},
+  {"id":"AB_SPELL_RESIST_13","display":"spell resistance 13","name_form":"suffix-of","slot":"armor"},
+  {"id":"AB_SPELL_RESIST_15","display":"spell resistance 15","name_form":"suffix-of","slot":"armor"},
+  {"id":"AB_SPELL_RESIST_17","display":"spell resistance 17","name_form":"suffix-of","slot":"armor"},
+  {"id":"AB_SPELL_RESIST_19","display":"spell resistance 19","name_form":"suffix-of","slot":"armor"},
   {"id":"AB_ETHEREALNESS","display":"etherealness","name_form":"suffix-of","slot":"armor"},
   {"id":"AB_UNDEAD_CONTROL","display":"undead controlling","name_form":"suffix-of","slot":"armor|shield"},
   {"id": "AB_TWILIGHT","display": "twilight","name_form": "prefix-adj","slot": "armor"},
@@ -55,6 +55,49 @@
 
   {"id":"AB_RESIST_SONIC_10","display":"sonic resistance 10","name_form":"suffix-of","slot":"armor|shield"},
   {"id":"AB_RESIST_SONIC_20","display":"sonic resistance 20","name_form":"suffix-of","slot":"armor|shield"},
-  {"id":"AB_RESIST_SONIC_30","display":"sonic resistance 30","name_form":"suffix-of","slot":"armor|shield"}
+  {"id":"AB_RESIST_SONIC_30","display":"sonic resistance 30","name_form":"suffix-of","slot":"armor|shield"},
+  {"id":"AB_DEATH_WARD","display":"death ward","name_form":"suffix-of","slot":"armor|shield"},
+  
+{"id":"AB_DISPLACEMENT","display":"displacement","name_form":"suffix-of","slot":"armor"},
+{"id":"AB_BLURRING","display":"blurring","name_form":"suffix-of","slot":"armor","tier":["blurring","greater blurring"]},
+{"id":"AB_BLURRING_GR","display":"greater blurring","name_form":"suffix-of","slot":"armor"},
+{"id":"AB_VARIABLE","display":"variable","name_form":"prefix-adj","slot":"shield"},
+{"id":"AB_RANGED","display":"ranged","name_form":"prefix-adj","slot":"shield"},
+{"id":"AB_MOBILITY","display":"mobility","name_form":"prefix-adj","slot":"armor"},
+{"id":"AB_DRAGONDODGER","display":"dragondodger","name_form":"prefix-adj","slot":"armor"},
+{"id":"AB_ROARING","display":"roaring","name_form":"prefix-adj","slot":"armor"},
+{"id":"AB_VANISHING","display":"vanishing","name_form":"suffix-of","slot":"armor|shield"},
+{"id":"AB_TIME_BUTTRESS","display":"time buttress","name_form":"suffix-of","slot":"shield"},
+{"id":"AB_ENERGY_IMMUNITY","display":"energy immunity","name_form":"suffix-of","slot":"armor|shield"},
+{"id":"AB_ENERGY_DEFENSE","display":"energy defense","name_form":"suffix-of","slot":"armor|shield"},
+{"id":"AB_RADIANT","display":"radiant","name_form":"prefix-adj","slot":"armor"},
+{"id":"AB_SOULBOUND","display":"soulbound","name_form":"suffix-of","slot":"armor|shield","tier":["soulbound","greater soulbound"]},
+{"id":"AB_SOULBOUND_GR","display":"greater soulbound","name_form":"suffix-of","slot":"armor|shield"},
+
+{"id":"AB_CALLED","display":"called","name_form":"suffix-of","slot":"armor|shield"},
+{"id":"AB_COMMANDER","display":"commander","name_form":"prefix-adj","slot":"armor|shield"},
+{"id":"AB_APORTER","display":"aporter","name_form":"suffix-of","slot":"armor|shield"},
+{"id":"AB_AVERTER","display":"averter","name_form":"suffix-of","slot":"shield"},
+{"id":"AB_GILLED","display":"gilled","name_form":"prefix-adj","slot":"armor"},
+{"id":"AB_DEEPDWELLER","display":"deepdweller","name_form":"prefix-adj","slot":"armor"},
+{"id":"AB_MASKING","display":"masking","name_form":"suffix-of","slot":"armor"},
+{"id":"AB_MENACING","display":"menacing","name_form":"suffix-of","slot":"armor"},
+{"id":"AB_SPEED","display":"speed","name_form":"suffix-of","slot":"armor|shield"},
+{"id":"AB_QUICKNESS","display":"quickness","name_form":"suffix-of","slot":"armor"},
+
+{"id":"AB_STAMINA","display":"stamina","name_form":"suffix-of","slot":"armor","tier":["stamina","improved stamina","greater stamina"]},
+{"id":"AB_STAMINA_IMP","display":"improved stamina","name_form":"suffix-of","slot":"armor"},
+{"id":"AB_STAMINA_GR","display":"greater stamina","name_form":"suffix-of","slot":"armor"},
+
+{"id":"AB_AGILITY","display":"agility","name_form":"suffix-of","slot":"armor","tier":["agility","improved agility","greater agility"]},
+{"id":"AB_AGILITY_IMP","display":"improved agility","name_form":"suffix-of","slot":"armor"},
+{"id":"AB_AGILITY_GR","display":"greater agility","name_form":"suffix-of","slot":"armor"},
+
+{"id":"AB_BALANCE","display":"balance","name_form":"suffix-of","slot":"armor","tier":["balance","improved balance","greater balance"]},
+{"id":"AB_BALANCE_IMP","display":"improved balance","name_form":"suffix-of","slot":"armor"},
+{"id":"AB_BALANCE_GR","display":"greater balance","name_form":"suffix-of","slot":"armor"},
+
+{"id":"AB_BANE_BLIND","display":"bane blind","name_form":"suffix-of","slot":"armor"},
+{"id":"AB_BLINKING","display":"blinking","name_form":"suffix-of","slot":"armor"}
 
 ]
