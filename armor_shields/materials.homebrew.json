@@ -1,35 +1,58 @@
 [
   {
-    "id":"MAT_STEEL_TEMPERED",
-    "name":"Tempered Steel (Homebrew)",
+    "id": "MAT_STEEL_HOME",
+    "name": "Steel (Homebrew)",
     "is_homebrew": true,
-    "substrate":"metal",
-    "applies_to":["armor","shield"],
-    "pricing_rule":"FLAT_ADDER",
-    "flat_gp":150,
-    "effects":{"hardness_delta":1,"hp_mult":1.05},
-    "notes":"Slightly tougher steel from superior tempering."
+    "substrate": "metal",
+    "applies_to": ["armor", "shield"],
+    "pricing_rule": "NO_CHANGE",
+    "effects": {
+      "weight_mult": 0.9,
+      "hardness_override": 11,
+      "acp_delta": 0,
+      "max_dex_delta": 0,
+      "asf_delta": 0,
+      "hp_mult": 1.0
+    },
+    "rarity_weight": 5,
+    "notes": "Cosmetic steel tweak: -10% weight, hardness 11, no price change."
   },
   {
-    "id":"MAT_ALCHEMICAL_SILVER_ARMOR",
-    "name":"Alchemical Silver (Armor) — Homebrew",
+    "id": "MAT_ALCHEMICAL_SILVER_ARMOR",
+    "name": "Alchemical Silver (Armor)",
     "is_homebrew": true,
-    "substrate":"metal",
-    "applies_to":["armor","shield"],
-    "pricing_rule":"ADDERS_BY_CATEGORY",
-    "category_adders_gp":{"light":150,"medium":300,"heavy":450,"shield":150},
-    "effects":{"hardness_override":8,"hp_mult":0.9,"asf_delta":5},
-    "notes":"Soft, bright plates; slightly higher ASF and lower hardness."
+    "substrate": "metal",
+    "applies_to": ["armor"],
+    "pricing_rule": "ADDERS_BY_CATEGORY",
+    "category_adders_gp": { "light": 200, "medium": 400, "heavy": 800 },
+    "effects": {
+      "weight_mult": 1.0,
+      "hardness_override": 6,
+      "hp_mult": 0.9,
+      "acp_delta": 0,
+      "max_dex_delta": 0,
+      "asf_delta": 0
+    },
+    "rarity_weight": 1,
+    "notes": "Homebrew: slightly softer; see material_effects for +1 grapple vs lycanthropes."
   },
   {
-    "id":"MAT_COLD_IRON_ARMOR",
-    "name":"Cold Iron (Armor) — Homebrew",
+    "id": "MAT_COLD_IRON_ARMOR",
+    "name": "Cold Iron (Armor)",
     "is_homebrew": true,
-    "substrate":"metal",
-    "applies_to":["armor","shield"],
-    "pricing_rule":"COST_MULT",
-    "cost_mult": 2.0,
-    "effects":{"hardness_override":10},
-    "notes":"Forged as armor at twice base cost."
+    "substrate": "metal",
+    "applies_to": ["armor"],
+    "pricing_rule": "ADDERS_BY_CATEGORY",
+    "category_adders_gp": { "light": 200, "medium": 400, "heavy": 800 },
+    "effects": {
+      "weight_mult": 1.0,
+      "hardness_override": 10,
+      "hp_mult": 1.0,
+      "acp_delta": 0,
+      "max_dex_delta": 0,
+      "asf_delta": 0
+    },
+    "rarity_weight": 1,
+    "notes": "Homebrew: see material_effects for +1 grapple vs fey."
   }
 ]
