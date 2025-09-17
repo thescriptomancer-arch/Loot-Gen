@@ -1,3 +1,0 @@
-Paste this into your new Lovable project's main instructions. Replace <YOUR-USER>/<YOUR-REPO> with your GitHub path.
-RAW = https://raw.githubusercontent.com/<YOUR-USER>/<YOUR-REPO>/refs/heads/main
-(Then follows the same engine setup you and I agreed: catalogs, pipeline steps, strict RAW rules, UI gating.)
