@@ -105,7 +105,7 @@ INVARIANTS
 - Mithral: treat_category_lighter_by=1; weight_mult=0.5; ACP +2; Max Dex +2; ASF −10.
 - Magic cap: enh + total effective ≤ +10.
 - Magic pricing: (bonus_total²)×1000 + Σ(flat gp); add mundane afterward.
-- Strict DMG: exclude `is_homebrew` and setting‑specific (where applicable).
+- Strict DMG: exclude any ability whose source is not DMG/SRD (i.e., filter out MIC/homebrew/setting shards).
 - Bespoke (if enabled): may return a fixed item from bespoke_items.json; still apply naming + narrative.
 
 PLANNER MODES → engine knobs
