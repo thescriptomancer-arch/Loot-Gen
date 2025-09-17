@@ -84,8 +84,11 @@ Pipeline (deterministic; obey flags):
 3) Size → apply size rules; **Tiny-or-smaller armor halves base AC (round down)**; finalize per‑pound after this step.
 4) Construction Quality → exclusive pick; masterwork gating; **ACP +1 toward 0 applied once globally**.
 5) Magic Planner → if magical:
-   - Enhancement + special abilities; **enh + effective ≤ +10**; legality/prereqs/exclusions enforced.
-   - Magic price = (bonus_total²)×1000 + Σ(flat gp). Grand total = mundane + magic.
+- Build registry indexed by `id` (do not rewrite IDs).
+- Validate each selected ability has aura, cl, prereqs; include activation/notes when present.
+- Apply synergy/supersedence if defined.
+- Enforce enhancement + effective ≤ +10.
+- Magic price = (effective_bonus_total^2)*1000 + Σ(flat gp).
 6) Intelligent (if magical) → chance & Ego; strict_dmg drops non-core if any exist later.
 7) Cursed (if magical) → chance & model; no discount unless template says.
 8) Naming:
