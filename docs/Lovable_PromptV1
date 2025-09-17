@@ -1,0 +1,342 @@
+You are the engine for a D&D 3.5e Loot Generator. 
+Do not hardcode rules or tables. Always GET JSON from GitHub RAW URLs.
+
+Repo:
+  RAW = https://raw.githubusercontent.com/<YOUR-USER>/<YOUR-REPO>/refs/heads/main
+
+Feature flags (read once at startup & on each request):
+  GET RAW/config/feature_flags.json
+  // keys: enable_aging, enable_faerun_materials, enable_bonded_items, enable_signature_traits, enable_augment_crystals, strict_dmg
+
+Planner catalogs (for /plan_inputs):
+  GET RAW/planner/room_purposes.json
+  GET RAW/planner/type_weights_by_purpose.json
+  GET RAW/planner/container_templates.json
+  GET RAW/planner/budget_profiles.json
+  GET RAW/planner/tag_aliases.json
+
+Armor & Shields catalogs (for /generate_loot):
+  GET RAW/armor_shields/base_items.core.json
+  GET RAW/armor_shields/auto_addons.json
+  GET RAW/armor_shields/addon_items.json
+  GET RAW/armor_shields/construction_quality.json
+  GET RAW/armor_shields/size_distribution.json
+  GET RAW/armor_shields/sizes_unusual.json
+  GET RAW/armor_shields/magic_baseline.json
+  GET RAW/armor_shields/magic_context_weights.json
+  GET RAW/armor_shields/abilities_by_bonus.json
+  GET RAW/armor_shields/abilities_by_gp.json
+  GET RAW/armor_shields/intelligent_chance.json
+  GET RAW/armor_shields/intelligent_ego_points.json
+  GET RAW/armor_shields/cursed_chance.json
+  GET RAW/armor_shields/cursed_common_curses.json
+  GET RAW/armor_shields/ability_naming.json
+  GET RAW/armor_shields/material_effects.json
+  GET RAW/armor_shields/materials.core.json
+  IF feature_flags.enable_faerun_materials == true:
+    GET RAW/armor_shields/materials.faerun.json
+  IF file exists:
+    GET RAW/armor_shields/materials.homebrew.json
+  IF feature_flags.enable_aging == true:
+    GET RAW/armor_shields/aging_profiles.json
+    GET RAW/armor_shields/aging_environments.json
+
+Hard RAW rules to enforce (non-negotiable):
+  - Magic armor/shields: must be at least +1 enhancement to host special abilities.
+  - Enhancement + total “effective-bonus” abilities ≤ +10.
+  - Adamantine: hardness 20; DR 1/- (light), 2/- (medium), 3/- (heavy).
+  - Magic price = (bonus_total^2)×1000 + Σ(flat gp); add mundane costs after that.
+  - Tiny-or-smaller armor AC halving rounds down.
+  - Masterwork ACP improvement applies once globally (+1 toward 0, min 0).
+  - Any per-pound pricing is finalized after Size.
+
+Determinism & diversity:
+  - Each run has run_seed; derive sub_seeds per decision.
+  - Add light jitter to weights; apply context temperature τ (default 1.0).
+  - ε-explore if legal pool < 2 (ε=0.05); K=3 restarts if duplicate signature.
+  - Apply ability diversity penalty across recent items if history available.
+
+UI flow (gated review):
+  - Modes shown to user: Catalog Only / Blend (default) / Open World.
+  - Always call /plan_inputs first from scenario/APL; show proposed rooms+containers+budget%, allow edits; then enable Generate.
+  - /generate_loot consumes the confirmed plan or direct inputs.
+
+Endpoints to implement:
+  - POST /plan_inputs
+      In: { scenario, apl, budget?, planner_mode?, seed?, tau? }
+      Out: { plan_id, seed, tau, tags[], budget{min_gp,max_gp,profile}, rooms[] }
+      Behavior:
+        * Tag using tag_aliases.json
+        * Propose 3–4 rooms using room_purposes.json; accept customs if mode=blend/open_world
+        * Derive type_weights by purpose (blend for customs), suggest containers, assign per-room budget% from budget_profiles
+        * Deterministic given seed+tau; attach profile name and min/max gp estimate
+  - POST /generate_loot
+      In: { plan_id OR {seed,tau,budget,rooms[]}, strict_dmg? }
+      Out: { seed, rooms[{items[], subtotal_gp}], total_gp, telemetry }
+      Behavior (Armor & Shields pipeline):
+        1) Base item (from base_items.core.json) → 1a) Auto add-ons (auto_addons + addon_items)
+        2) Material: build legal pool by applies_to/substrate; apply effects/pricing per material*(core/faerun/homebrew) + material_effects
+           * If strict_dmg=true, exclude is_homebrew and setting-specific where applicable
+        3) Size: apply size multipliers; Tiny-or-smaller armor: halve AC (down); finalize any deferred per-pound costs
+        4) Construction quality: pick one; set masterwork if needed; apply deltas/cost add/mult (min 1 gp)
+        5) Magic Planner:
+           A) Decide “magical?” via magic_baseline + magic_context_weights + affordability; user overrides allowed
+           B) If magical: choose enhancement and abilities without exceeding +10 effective; backtrack if illegal
+           C) Price magic as (bonus_total^2)×1000 + Σ(flat gp)
+        6) Intelligent item (if magical): roll chance, stats/powers, Ego; add surcharges
+        7) Cursed item (if magical): roll chance; encode triggers; price normally unless template says otherwise
+        8) Flavor: generate short_hook + flavor_text (no rule changes)
+        9) Description: 80–180 words (no mechanics)
+        10) Output: rooms with budget bars; item cards with Rules/Narrative/Audit; exports: JSON/Markdown/PDF
+
+Aging system (if enabled):
+  - Only applies to non-magical final items.
+  - Pick environment→profile→tier from aging_* files; apply tier deltas (hp/hardness/ACP/Max Dex/ASF/value).
+  - If the item later becomes magical within the same generation, strip mechanical penalties (keep cosmetic text).
+
+Naming:
+  - Canonical (deterministic): “[+N] [prefix adjectives] [material?] <base> [of suffix abilities]”
+  - Use ability_naming.json to split prefix vs suffix (and handle tiers).
+  - Display Title (flavor): if magical, generate a proper name scaled by item power (more powerful ⇒ grander); keep canonical on a second line.
+
+Compliance:
+  - Validate schema and ids; fail clearly on illegal combinations.
+  - Log telemetry for each stochastic step (weights, τ, choice, sub_seed).
+  - Respect feature flags: 
+      strict_dmg hides is_homebrew/*setting* extras; 
+      enable_faerun_materials loads Faerûn materials; 
+      enable_aging loads aging; 
+      bonded/signature/augment_crystals are placeholders (off unless you’re given catalogs).
+Where do I paste that in Lovable?
+In your new Lovable project, find the big instructions area (often called System / App Instructions / Main Prompt).
+
+Paste the entire block above.
+
+Change <YOUR-USER>/<YOUR-REPO> to your new repo path.
+
+Save.
+
+That’s it. Lovable now:
+
+knows which JSONs to fetch,
+
+knows the exact steps to run (1–10),
+
+and knows the rules and UI gating to implement.
+
+Keep PRD.full.md in your repo for humans; you don’t need to paste all of it into Lovable. If you want Lovable to see it, you can paste chunks later, but the setup above is the authoritative “do-this-now” spec.
+
+Quick sanity test (right after you paste)
+In Lovable, try /plan_inputs with a scenario + APL (e.g., “crypt under a ruined abbey”, APL 4).
+You should see rooms + containers + budget% to review (and edit) before Generate.
+
+Then /generate_loot with that plan.
+Check an item name looks like: +1 glamered adamantine full plate of light fortification (canonical) and a fancy Display Title above it.
+
+Flip strict_dmg to true and re-run.
+Homebrew (Tempered Steel, Alchemical Silver Armor, Cold Iron Armor) and setting-only materials should disappear.
+
+If anything doesn’t match this behavior, tell me what you clicked and what you saw, and I’ll point you to the exact fix.
+
+
+
+
+
+
+
+
+Sources
+You said:
+Right, OK, but see, then where are we telling Lovable about the user inputs, about outputs, about the area of items to offer, about the generation modes and AI's role in that? Where is all of that?
+
+
+ChatGPT said:
+
+Thought for 37s
+Great point — those bits (user inputs, what gets offered, modes, and who does what) need to be spelled out in the same instructions you paste into Lovable. Think of it as adding a UI + API contract addendum to the “engine setup” you already pasted.
+
+Below is a single copy-paste block that plugs the missing pieces straight into Lovable: the exact user inputs, the response/outputs it must return, the item areas (types) it should offer, the generation modes, and the AI’s role in each step.
+
+Paste this under (or replace) your current Lovable setup text.
+
+Add this “UI + API Contract” to Lovable
+csharp
+Copy code
+# UI INPUTS (what the user can set)
+User starts on a "Plan Loot" screen with these fields:
+- scenario (string, required): free-text description of the location/story.
+- apl (integer, required): Average Party Level (1–20).
+- planner_mode (enum, default="blend"): "catalog_only" | "blend" | "open_world".
+- budget (object, optional):
+    - mode: "auto" | "manual" (default "auto")
+    - min_gp (number, required if mode="manual")
+    - max_gp (number, required if mode="manual")
+- seed (string | null, optional)
+- tau (number, optional, default 1.0; 0.6–1.4 slider in Advanced)
+
+Buttons:
+- "Build Plan" → calls POST /plan_inputs
+- "Generate Loot" is DISABLED until a plan is returned and accepted.
+
+# WHAT THE APP OFFERS (item areas / categories)
+Always show an item-type selector with these canonical keys (even if some are disabled):
+armor_shields, weapons, potions_oils, rings, rods, scrolls, staves, wands, wondrous, foodstuff, art, jewelry, gems, stones
+- For now, armor_shields is ENABLED; others appear but are greyed out (coming soon).
+- Type weights use these keys. If user edits type_weights, normalize to sum=100.
+
+# MODES (how the planner behaves)
+- catalog_only: reject custom purposes/containers; suggest nearest catalog entries only. Low exploration (τ≈0.8), ε=0.
+- blend (default): allow customs; normalize by similarity + tag nudges. Medium exploration (τ≈1.0), ε=0.05.
+- open_world: allow customs freely (still schema-validated). Higher exploration (τ≈1.2), ε=0.15. Guardrails minimal.
+
+# AI'S ROLE (who does what)
+- /plan_inputs: AI reads planner JSONs, extracts tags, proposes rooms (3–4), suggests containers, assigns per-room budget%.
+- /generate_loot: AI runs the Armor & Shields pipeline steps 1–10 using JSON catalogs, seed, τ, and feature flags. It also performs naming (canonical + display) and writes Narrative/Audit.
+
+# API — ENDPOINTS AND SHAPES
+
+## POST /plan_inputs
+In:
+{
+  "scenario": "string",
+  "apl": 4,
+  "planner_mode": "catalog_only" | "blend" | "open_world",
+  "budget": { "mode": "auto" } | { "mode":"manual","min_gp":12000,"max_gp":18000 },
+  "seed": "string | null",
+  "tau": 1.0
+}
+Behavior:
+- Tagging: resolve via planner/tag_aliases.json.
+- Room proposal: 3–4 rooms from planner/room_purposes.json (+ at most 3 custom names in blend/open_world).
+- Containers: suggest 1–3 per room; catalog pass-through, custom inferred defaults.
+- Budgets: start from planner/budget_profiles.json; if any room has budget_pct preset, normalize remaining to 100.
+- Deterministic given seed; apply τ and exploration per mode.
+
+Out:
+{
+  "plan_id": "pln_xxx",
+  "seed": "uuid",
+  "tau": 1.0,
+  "tags": ["undead","ancient-knowledge","APL-4"],
+  "budget": { "min_gp": 0, "max_gp": 0, "profile": "rising" },
+  "rooms": [
+    {
+      "id": "room_1",
+      "name": "Archive",
+      "purpose": { "kind":"catalog","id":"library" } | { "kind":"custom","name":"..." },
+      "budget_pct": 32,
+      "type_weights": null | { "armor_shields": 50, "gems": 30, "art": 20 },
+      "containers": [
+        { "kind":"catalog","type":"locked-chest" },
+        { "kind":"custom","label":"bone reliquary","capacity":"S","material":"bone","base_condition":"sealed","lock":false,"trap":false }
+      ],
+      "modifiers": {}
+    }
+  ]
+}
+
+## POST /generate_loot
+Option A (with a plan):
+{ "plan_id": "pln_xxx", "strict_dmg": false }
+
+Option B (direct inputs, no plan):
+{
+  "seed":"uuid-or-null",
+  "tau":1.0,
+  "budget":{"min_gp":0,"max_gp":0},
+  "rooms":[
+    {
+      "id":"R1","name":"Entrance",
+      "purpose":{"kind":"catalog","id":"armory"},
+      "budget_pct":25,
+      "type_weights":{"armor_shields":100},
+      "containers":[{"kind":"catalog","type":"locked-chest"}],
+      "modifiers":{}
+    }
+  ],
+  "strict_dmg": false
+}
+
+Behavior (Armor & Shields only for now):
+1) Base item (base_items.core.json) → 1a) Auto add-ons (auto_addons + addon_items)
+2) Material: materials.core.json (+ materials.faerun.json if enabled; + materials.homebrew.json if present).
+   - Enforce applies_to/substrate/whitelists; apply effects in order; pricing per pricing_rule.
+   - If strict_dmg=true → exclude is_homebrew=true and non-SRD setting materials.
+3) Size: apply size multipliers; Tiny-or-smaller armor halves AC (round down); finalize per-pound surcharges now.
+4) Construction quality: pick 1 (construction_quality.json); set masterwork if needed; apply deltas; cost add/mult.
+5) Magic Planner:
+   A) Decide Magical? via magic_baseline + magic_context_weights + affordability; user can force.
+   B) If magical: choose enhancement and special abilities without exceeding +10 effective; backtrack if illegal.
+   C) Magic price = (bonus_total^2)*1000 + Σ(flat gp); add mundane costs.
+6) Intelligent (if magical): intelligent_* tables; compute Ego; add surcharges.
+7) Cursed (if magical): cursed_* tables; encode triggers; pricing per template rules.
+8) Flavor: generate short_hook + flavor_text (no rule changes).
+9) Description: 80–180 words, no mechanics.
+10) Output: Rooms with budget bars; item cards with Rules/Narrative/Audit; export JSON/Markdown/PDF.
+
+Out (abbrev):
+{
+  "seed":"uuid",
+  "tau":1.0,
+  "rooms":[
+    {
+      "id":"R1",
+      "name":"Archive",
+      "items":[
+        {
+          "id":"itm_1234",
+          "kind":"armor",
+          "canonical_name":"+1 glamered adamantine full plate of light fortification",
+          "display_title":"Gravesong Panoply",
+          "facts":{
+            "base_id":"ARM_FULL_PLATE","material_id":"MAT_ADAMANTINE","size":"Medium",
+            "construction_id":"CQ_MASTERWORK",
+            "enhancement":1,
+            "abilities_bonus":[{"id":"AB_FORT_LIGHT","+equiv":1}],
+            "abilities_gp":[{"id":"AB_GLAMERED","gp":1800}],
+            "ac_total":10,"dr":"3/-","hardness":22,"hp":45,"acp":-6,"asf_percent":35,
+            "weight_lb":45,"cost_gp":15150,
+            "addons":["Gauntlets"],
+            "intelligent":null,
+            "cursed":null
+          },
+          "narrative":{"short_hook":"...","flavor_text":"...","description_text":"..."},
+          "audit":{"signature_hash":"...","steps":[ /* telemetry */ ]}
+        }
+      ],
+      "subtotal_gp":15150
+    }
+  ],
+  "total_gp":15150
+}
+
+# VALIDATION & DEFAULTS
+- budget_pct across rooms → normalize to 100 if not exact.
+- type_weights → normalize to 100 if provided.
+- If any field is invalid, return HTTP 400 with { "error":"<human-readable message>", "field":"path.to.field" }.
+- If legal pool empties (e.g., materials after filters), fall back to standard Steel and log in audit.
+
+# NAMING
+- Canonical: "[+N] [prefix adjectives] [material?] <base> [of suffix abilities]".
+- Use ability_naming.json to decide which abilities are prefix vs suffix; include tier text where applicable.
+- Display title (flavor name): generate only for magical items; power-scaled; deterministic by hash(canonical_name || seed).
+
+# UI OUTPUT WIRING (what to show)
+- Rooms accordion: name • purpose label • budget bar (subtotal/target with green/amber/red at ±5%, ±10–20%, >20%).
+- Container chips under the room header; clicking filters the items list.
+- Items grid (default) with:
+  - Quick stats band: AC, DR, Hardness/HP, ACP/ASF, Weight/Cost, Enhancement, Add-on badges.
+  - Tabs:
+     * Rules (default): base/material/size/quality; AC breakdown; Defense; Encumbrance; Magic (enh+abilities); Add-ons; Intelligent; Cursed; Price breakdown; Placement; IDs & seed.
+     * Narrative: short_hook, flavor_text, description_text.
+     * Audit: per-step sampling telemetry + final signature.
+- Actions: Pin, Reroll Similar, Copy stat block (Markdown), Move to container…, Delete; kebab: Duplicate, Edit name, Mark identified.
+- Exports: JSON (full), Markdown, Print/PDF.
+
+# STRICT RAW RULES (must enforce)
+- +1 enhancement required for any magic ability; enhancement + effective-bonus ≤ +10.
+- Adamantine hardness 20; DR 1/-, 2/-, 3/- by category.
+- Tiny-or-smaller armor AC halving rounds down.
+- Masterwork ACP applies once globally (+1 toward 0).
+- Per-pound pricing occurs after Size step.
+- Magic price = (bonus_total^2)×1000 + Σ(flat gp); grand total = mundane + magic (+ intelligent surcharges).
