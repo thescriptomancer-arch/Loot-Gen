@@ -17,28 +17,17 @@
   {"id":"AB_SPELL_RESIST_15","name":"Spell resistance (15)","+equiv":3,"slot":"armor|shield","prereq_enh_min":1,"source":"SRD"},
   {"id":"AB_SPELL_RESIST_17","name":"Spell resistance (17)","+equiv":4,"slot":"armor|shield","prereq_enh_min":1,"source":"SRD"},
   {"id":"AB_SPELL_RESIST_19","name":"Spell resistance (19)","+equiv":5,"slot":"armor|shield","prereq_enh_min":1,"source":"SRD"},
-  {
-  "id": "AB_TWILIGHT",
-  "name": "Twilight",
-  "+equiv": 1,
-  "slot": "armor",
-  "prereq_enh_min": 1,
-  "source": "MIC"
-},
-{
-  "id": "AB_SOULFIRE",
-  "name": "Soulfire",
-  "+equiv": 4,
-  "slot": "armor",
-  "prereq_enh_min": 1,
-  "source": "MIC"
-},
-{
-  "id": "AB_GHOST_WARD",
-  "name": "Ghost Ward",
-  "+equiv": 1,
-  "slot": "armor|shield",
-  "prereq_enh_min": 1,
-  "source": "MIC"
-}
+  
+  {"id": "AB_TWILIGHT","name": "Twilight","+equiv": 1,"slot": "armor","prereq_enh_min": 1,"source": "MIC"},
+  {"id": "AB_SOULFIRE","name": "Soulfire","+equiv": 4,"slot": "armor","prereq_enh_min": 1,"source": "MIC"},
+  {"id": "AB_GHOST_WARD","name": "Ghost Ward","+equiv": 1,"slot": "armor|shield","prereq_enh_min": 1,"source": "MIC"},
+  
+  {"id":"AB_ANCHORING","name":"Anchoring","+equiv":1,"slot":"armor|shield","prereq_enh_min":1,"source":"MIC"},
+  {"id":"AB_NIMBLENESS","name":"Nimbleness","+equiv":1,"slot":"armor","prereq_enh_min":1,"source":"MIC"},
+  {"id":"AB_EVERBRIGHT","name":"Everbright","+equiv":1,"slot":"armor","prereq_enh_min":1,"source":"MIC"},
+  {"id":"AB_MALLEABLE","name":"Malleable","+equiv":1,"slot":"armor","prereq_enh_min":1,"source":"MIC"},
+  {"id":"AB_AXEBLOCK","name":"Axeblock","+equiv":2,"slot":"armor|shield","prereq_enh_min":1,"source":"MIC"},
+  {"id":"AB_HAMMERBLOCK","name":"Hammerblock","+equiv":2,"slot":"armor|shield","prereq_enh_min":1,"source":"MIC"},
+  {"id":"AB_SPEARBLOCK","name":"Spearblock","+equiv":2,"slot":"armor|shield","prereq_enh_min":1,"source":"MIC"},
+  {"id":"AB_RETALIATION","name":"Retaliation","+equiv":3,"slot":"armor","prereq_enh_min":1,"source":"MIC"}
 ]
