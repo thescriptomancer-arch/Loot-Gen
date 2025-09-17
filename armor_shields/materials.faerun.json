@@ -26,4 +26,55 @@
   {"id":"MAT_LIVING_METAL","name":"Living Metal","is_setting_specific":"faerun","substrate":"metal","applies_to":["armor","shield"],
    "pricing_rule":"ADDERS_BY_CATEGORY","category_adders_gp":{"light":700,"medium":2000,"heavy":4500},
    "effects":{"self_repair_hp_per_minute":1,"hardness_override":12,"hp_per_inch":30},"source":"Magic of Faerûn (summary)"}
+  ,
+  {
+    "id":"MAT_BLUEWOOD",
+    "name":"Bluewood",
+    "is_setting_specific":"faerun",
+    "source":"Magic of Faerûn (Blueleaf/Volodni); Realmshelps",
+    "substrate":"wood",
+    "applies_to":["armor","shield"],
+    "auto_masterwork": true,
+    "pricing_rule":"ADDERS_BY_CATEGORY",
+    "category_adders_gp":{"light":300,"medium":600,"heavy":1200,"shield":300},
+    "effects":{"weight_mult":0.5,"hardness_override":10,"hp_per_inch":30},
+    "notes":"Magically treated blueleaf wood; as hard as steel at half weight."
+  },
+  {
+    "id":"MAT_DUSKWOOD_BREASTPLATE",
+    "name":"Duskwood (Breastplate only)",
+    "is_setting_specific":"faerun",
+    "source":"Magic of Faerûn; Realmshelps",
+    "substrate":"wood",
+    "applies_to":["armor"],
+    "pricing_rule":"FLAT_ADDER",
+    "flat_gp":3000,
+    "effects":{"weight_mult":0.5,"hardness_override":10,"hp_per_inch":30},
+    "constraints":{"allowed_categories":["breastplate"]},
+    "notes":"Only breastplates work; functions like light armor variant per MoF notes."
+  },
+  {
+    "id":"MAT_SILVER_TREATED_ARMOR",
+    "name":"Magically Treated Silver",
+    "is_setting_specific":"faerun",
+    "source":"Magic of Faerûn; Realmshelps",
+    "substrate":"metal",
+    "applies_to":["armor","shield"],
+    "pricing_rule":"ADDERS_BY_CATEGORY",
+    "category_adders_gp":{"light":2000,"medium":2000,"heavy":2000,"shield":2000},
+    "effects":{"resistances":{"electricity":2},"hardness_override":10,"hp_per_inch":30},
+    "notes":"Armor grants electricity resistance 2; weapons are treated as silver vs DR (handled in weapons module)."
+  },
+  {
+    "id":"MAT_PLATINUM_TREATED",
+    "name":"Magically Treated Platinum",
+    "is_setting_specific":"faerun",
+    "source":"Magic of Faerûn; Realmshelps",
+    "substrate":"metal",
+    "applies_to":["armor","shield"],
+    "pricing_rule":"ADDERS_BY_CATEGORY",
+    "category_adders_gp":{"light":5000,"medium":5000,"heavy":5000,"shield":5000},
+    "effects":{"weight_mult":2.0,"hardness_override":10,"hp_per_inch":30,"treat_category_heavier_by":1,"asf_delta":10,"max_dex_delta":-2,"acp_delta":-3},
+    "notes":"Like treated gold but pricier; heavy weapon rule applies to weapons (weapons module)."
+  }
 ]
