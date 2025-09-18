@@ -29,7 +29,7 @@
     { "id": "sig_writhing",    "name": "Writhing",    "notes": "Briefly twists/writhes on activation." }
   ],
   "assignment": {
-    "scope": "all_items",              // or "magical_only"
-    "reroll_if_mismatch": true         // e.g., skip “Sparking” on non-weapons if you later enable weapons
+    "scope": "all_items",           
+    "reroll_if_mismatch": true      
   }
 }
