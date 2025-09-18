@@ -27,6 +27,8 @@
 - `enable_faerun_materials`: adds setting‑specific materials (e.g., Arandur, Darksteel).  
 - `enable_bespoke_items`: allows prebuilt uniques (e.g., Rhino Hide).  
 - `strict_dmg`: drops homebrew/setting‑specific rows (core‑only).
+- `enable_signature_traits`: cosmetic traits from DMG2; no rules impact (5% chance by default).
+
 
 ## Rules we enforce (high‑level)
 - **Masterwork ACP**: +1 toward 0 **once**, globally (never twice).
@@ -66,6 +68,8 @@
   -   armor_shields/augment_crystals.json (armor/shield only) — each row must include:
 id (canonical), name, slot ("armor"|"shield"|"either"), tier ("least"|"lesser"|"greater"), gp (flat), aura, cl, prereqs (string[]), activation (if any), effect (short one-liner), source. The engine equips at most one crystal per item and applies its flat GP after magic pricing. Crystals never count toward the +10 cap.
 Examples: clasp_of_energy_protection_[acid|cold|elec|fire|sonic]_[least|lesser|greater], crystal_of_adamant_armor_[least|lesser|greater], iron_ward_diamond_[least|lesser|greater], etc.
+- Cosmetic traits (optional): `armor_shields/signature_traits.json`
+
 
 
 ## Updating content (no code)
