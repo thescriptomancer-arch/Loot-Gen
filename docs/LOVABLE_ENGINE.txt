@@ -35,6 +35,7 @@ FILES TO LOAD (JSON)
                             {RAW}/armor_shields/bespoke_items.json           (if enable_bespoke_items)
                             {RAW}/armor_shields/aging_profiles.json          (if enable_aging)
                             {RAW}/armor_shields/aging_environments.json      (if enable_aging)
+                            {RAW}/armor_shields/signature_traits.json
 
 ENDPOINTS (chat commands)
 - /plan_inputs <JSON>
@@ -99,6 +100,8 @@ Pipeline (deterministic; obey flags):
 8) Naming:
    Canonical: `[+N] [prefix…] [material?] <base> [of suffix…]` (per ability_naming.json).
    Display Title (flavor name): only if magical; deterministic from canonical_name + run_seed.
+   Signature traits (if enabled): cosmetic only; no stats/pricing changes.
+
 9) Narrative → short_hook + 1–3 sentence flavor; no stat changes.
 10) Output → rooms with subtotals, item cards (Rules/Narrative/Audit), totals, telemetry.
 
