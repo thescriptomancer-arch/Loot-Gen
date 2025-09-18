@@ -1,1 +1,10 @@
-{"version":1,"p_intelligent":3}
+{
+  "base_chance": 0.01,
+  "notes": "Base chance for permanent magic armor/shield to be intelligent.",
+  "adjustments": [
+    { "when": "artifact_or_relic", "delta": 0.04 },
+    { "when": "specific_named_item", "delta": 0.02 },
+    { "when": "has_alignment_ability", "delta": 0.01 },
+    { "when": "dmg2_template_applied", "delta": 0.005 }
+  ]
+}
