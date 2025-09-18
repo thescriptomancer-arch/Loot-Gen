@@ -1,1 +1,11 @@
-[{"id":"CURSE_INTERMITTENT","label":"Intermittent (50% to function)","mechanic":"chance","value":50,"source":"DMG"}]
+[
+  {"id":"CURSE_DELUSION_BASIC","type":"CURSE_DELUSION","name":"Delusion"},
+  {"id":"CURSE_OPPOSITE_SELF","type":"CURSE_OPPOSITE","name":"Opposite/Targets Self"},
+  {"id":"CURSE_INTERMITTENT_UNRELIABLE","type":"CURSE_INTERMITTENT","subtype":"unreliable","failure_chance_pct":5,"name":"Intermittent—Unreliable"},
+  {"id":"CURSE_INTERMITTENT_DEPENDENT_DAYLIGHT","type":"CURSE_INTERMITTENT","subtype":"dependent","dependency_id":"DEP_DIRECT_SUNLIGHT","name":"Intermittent—Dependent (Direct Sunlight)"},
+  {"id":"CURSE_INTERMITTENT_UNCONTROLLED","type":"CURSE_INTERMITTENT","subtype":"uncontrolled","trigger_roll_pct":5,"name":"Intermittent—Uncontrolled"},
+  {"id":"CURSE_REQUIREMENT_DAILY_BLOOD","type":"CURSE_REQUIREMENT","requirement_id":"REQ_DRAW_BLOOD","name":"Requirement—Draw Blood Daily"},
+  {"id":"CURSE_DRAWBACK_NEG_LVL","type":"CURSE_DRAWBACK","drawback_id":"DB_NEG_LVL_ONE","name":"Drawback—Negative Level"},
+  {"id":"CURSE_DIFFERENT_EFFECT_GENERIC","type":"CURSE_DIFFERENT_EFFECT","name":"Completely Different Effect"},
+  {"id":"CURSE_SUBSTITUTE_SPECIFIC","type":"CURSE_SUBSTITUTE_SPECIFIC","name":"Substitute Specific Cursed Item"}
+]
