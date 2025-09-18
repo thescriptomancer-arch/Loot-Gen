@@ -1,1 +1,22 @@
-[{"range":"01-25","situation":"Only under moonlight"},{"range":"26-50","situation":"Only underground"},{"range":"51-75","situation":"Only while soaked in water"},{"range":"76-100","situation":"Only on holy ground"}]
+[
+  {"id":"DEP_TEMP_BELOW_FREEZING","name":"Temperature below freezing"},
+  {"id":"DEP_TEMP_ABOVE_FREEZING","name":"Temperature above freezing"},
+  {"id":"DEP_DAY","name":"During the day"},
+  {"id":"DEP_NIGHT","name":"During the night"},
+  {"id":"DEP_DIRECT_SUNLIGHT","name":"In direct sunlight"},
+  {"id":"DEP_OUT_OF_SUNLIGHT","name":"Out of direct sunlight"},
+  {"id":"DEP_UNDERWATER","name":"Underwater"},
+  {"id":"DEP_OUT_OF_WATER","name":"Out of water"},
+  {"id":"DEP_UNDERGROUND","name":"Underground"},
+  {"id":"DEP_ABOVEGROUND","name":"Aboveground"},
+  {"id":"DEP_NEAR_CREATURE_TYPE","name":"Within 10 ft. of a random creature type"},
+  {"id":"DEP_NEAR_RACE","name":"Within 10 ft. of a random race or kind"},
+  {"id":"DEP_NEAR_ARCANE","name":"Within 10 ft. of an arcane spellcaster"},
+  {"id":"DEP_NEAR_DIVINE","name":"Within 10 ft. of a divine spellcaster"},
+  {"id":"DEP_IN_HANDS_NONSPELL","name":"In the hands of a nonspellcaster"},
+  {"id":"DEP_IN_HANDS_SPELLCASTER","name":"In the hands of a spellcaster"},
+  {"id":"DEP_ALIGNMENT_MATCH","name":"In hands of a particular alignment"},
+  {"id":"DEP_GENDER","name":"In hands of a particular gender"},
+  {"id":"DEP_ASTRAL_EVENTS","name":"On nonholy days/astrological events"},
+  {"id":"DEP_DISTANCE_FROM_SITE","name":"More than 100 miles from a particular site"}
+]
