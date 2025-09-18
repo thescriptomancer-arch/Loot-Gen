@@ -1,0 +1,24 @@
+{
+  "dominance_save": {
+    "dc": "item_ego",
+    "success": "wielder_dominant_1_day_or_until_critical",
+    "failure": "item_dominant_same_duration"
+  },
+  "item_demands_examples": [
+    "Remove offensive associates/items",
+    "Divest other magic items",
+    "Obedience for item-directed goals",
+    "Seek and slay hated foes",
+    "Protective wards for item",
+    "Carry at all times",
+    "Relinquish item to suitable possessor"
+  ],
+  "extreme_measures_examples": [
+    "Force possessor into combat",
+    "Refuse to strike",
+    "Strike at wielder/allies",
+    "Force surrender",
+    "Drop itself"
+  ],
+  "rivalry": "Senses other intelligent items within 60 ft. and may act against rivals."
+}
