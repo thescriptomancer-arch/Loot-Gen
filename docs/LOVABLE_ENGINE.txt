@@ -10,13 +10,12 @@ FILES TO LOAD (JSON)
                             {RAW}/planner/container_templates.json
                             {RAW}/planner/budget_profiles.json
                             {RAW}/planner/tag_aliases.json
-- Armor & Shields (core):   {RAW}/armor_shields/base_items.core.json
+- Armor & Shields (core):   {RAW}/armor_shields/base_items.bespoke.json
                             {RAW}/armor_shields/auto_addons.json
                             {RAW}/armor_shields/addon_items.json
                             {RAW}/armor_shields/materials.core.json
                             {RAW}/armor_shields/material_effects.json
                             {RAW}/armor_shields/size_distribution.json
-                            {RAW}/armor_shields/sizes_unusual.json
                             {RAW}/armor_shields/construction_quality.json
                             {RAW}/armor_shields/abilities_by_bonus.json
                             {RAW}/armor_shields/abilities_by_gp.json
@@ -31,6 +30,28 @@ FILES TO LOAD (JSON)
                             {RAW}/armor_shields/templates_engine.config.json
                             {RAW}/armor_shields/templates_armor_shield.json
                             {RAW}/armor_shields/signature_traits.config.json
+                            {RAW}/armor_shields/templates_armor_shield.json
+                            {RAW}/armor_shields/templates_engine.config.json
+                            {RAW}/armor_shields/signature_traits.json
+
+                            {RAW}/armor_shields/intelligent_statistics.json
+                            {RAW}/armor_shields/intelligent_alignment.json
+                            {RAW}/armor_shields/intelligent_capability_buckets.json
+                            {RAW}/armor_shields/intelligent_capability_weights.json
+                            {RAW}/armor_shields/intelligent_lesser_powers.json
+                            {RAW}/armor_shields/intelligent_greater_powers.json
+                            {RAW}/armor_shields/intelligent_special_purpose_chance.json
+                            {RAW}/armor_shields/intelligent_special_purpose.json
+                            {RAW}/armor_shields/intelligent_dedicated_powers.json
+
+                            {RAW}/armor_shields/cursed_types_summary.json
+                            {RAW}/armor_shields/cursed_dependent_situations.json
+                            {RAW}/armor_shields/cursed_drawbacks.json
+                            {RAW}/armor_shields/cursed_requirements.json
+
+                            {RAW}/armor_shields/component_terms.json
+                            {RAW}/armor_shields/flavor_atoms.json
+                            {RAW}/armor_shields/sizes_unusual.json
 - IDs registry (validation only): {RAW}/ids_registry.json
 - Optional shards (load iff present/flagged):
                             {RAW}/armor_shields/materials.faerun.json       (if enable_faerun_materials)
