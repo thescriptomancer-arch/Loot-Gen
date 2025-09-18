@@ -1,1 +1,11 @@
-[{"type":"Intermittent—Recharge","trigger":"per_use","cadence":"50% chance to function","notes":""},{"type":"Intermittent—Dependent","trigger":"dependent","cadence":"requires condition","notes":"Pair with dependent situations"}]
+{
+  "types": [
+    { "id": "CURSE_DELUSION", "name": "Delusion", "weight": 15 },
+    { "id": "CURSE_OPPOSITE", "name": "Opposite Effect or Target", "weight": 20 },
+    { "id": "CURSE_INTERMITTENT", "name": "Intermittent Functioning", "weight": 10 },
+    { "id": "CURSE_REQUIREMENT", "name": "Requirement", "weight": 15 },
+    { "id": "CURSE_DRAWBACK", "name": "Drawback", "weight": 15 },
+    { "id": "CURSE_DIFFERENT_EFFECT", "name": "Completely Different Effect", "weight": 15 },
+    { "id": "CURSE_SUBSTITUTE_SPECIFIC", "name": "Substitute Specific Cursed Item", "weight": 10 }
+  ]
+}
