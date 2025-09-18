@@ -121,6 +121,29 @@ PLANNER MODES → engine knobs
 - blend (default): τ=0.8, ε=0.05, K=3, normalize customs
 - open_world: τ=1.0, ε=0.15, K=5, minimal guardrails
 
+# Item Templates (DMG II) — Armor/Shield
+# Nonmagical; annotate stats and notes; do not alter enhancement math.
+
+[TEMPLATES]
+enable=true         # templates_engine.config.json
+roll_chance=0.06
+apply_to=armor,shield
+stacking_order=base,material,magic,template
+
+# Effects applied:
+# - weight_mult, hardness_delta, hp_delta
+# - asf_delta_pct, acp_delta, max_dex_delta (clamp ASF>=0, Max Dex>=0)
+# - special_effects: add to notes/traits (no mechanics engine)
+# - cost_gp: add to mundane price component only
+
+# Output fields added:
+#   templates_applied: [{id,name,source,cost_gp}]
+#   template_affinities: {special_abilities:[], specific_items:[]}
+#   template_notes: [string]
+
+# Availability (optional): if enabled in config, compute availability.effective_price = final_price + 10*cost_gp
+
+
 ERROR HANDLING
 - If any RAW file 404s or a JSON is invalid, reply with a short error citing the exact URL and field path.
 
