@@ -1,1 +1,19 @@
-[{"range":"01-25","power":"Bane vs target +2d6","price_mod_gp":6000},{"range":"26-50","power":"Haste 10 rounds/day","price_mod_gp":10000},{"range":"51-75","power":"Holy aura 1/day","price_mod_gp":12000},{"range":"76-100","power":"Magic circle vs evil at will","price_mod_gp":8000}]
+[
+  {"id":"DEDP_ICE_STORM","name":"Ice Storm","base_price_modifier_gp":50000},
+  {"id":"DEDP_CONFUSION","name":"Confusion","base_price_modifier_gp":50000},
+  {"id":"DEDP_PHANTASMAL_KILLER","name":"Phantasmal Killer","base_price_modifier_gp":50000},
+  {"id":"DEDP_CRUSHING_DESPAIR","name":"Crushing Despair","base_price_modifier_gp":50000},
+  {"id":"DEDP_DIMENSION_DOOR","name":"Dimension Door (self + wielder)","base_price_modifier_gp":50000},
+  {"id":"DEDP_CONTAGION_H4","name":"Contagion (Heightened 4th, touch)","base_price_modifier_gp":56000},
+  {"id":"DEDP_POISON_H4","name":"Poison (Heightened 4th, touch)","base_price_modifier_gp":56000},
+  {"id":"DEDP_RUSTING_GRASP","name":"Rusting Grasp (touch)","base_price_modifier_gp":56000},
+  {"id":"DEDP_LIGHTNING_BOLT_10D6","name":"Lightning Bolt 10d6","base_price_modifier_gp":60000},
+  {"id":"DEDP_FIREBALL_10D6","name":"Fireball 10d6","base_price_modifier_gp":60000},
+  {"id":"DEDP_LUCK_PLUS2","name":"+2 Luck bonus on attacks, saves, checks","base_price_modifier_gp":80000},
+  {"id":"DEDP_MASS_INFLICT_LIGHT","name":"Mass Inflict Light Wounds","base_price_modifier_gp":81000},
+  {"id":"DEDP_SONG_OF_DISCORD","name":"Song of Discord","base_price_modifier_gp":81000},
+  {"id":"DEDP_PRYING_EYES","name":"Prying Eyes","base_price_modifier_gp":81000},
+  {"id":"DEDP_GREATER_SHOUT_15D6","name":"Greater Shout 15d6 (3/day)","base_price_modifier_gp":130000},
+  {"id":"DEDP_WAVES_OF_EXHAUSTION","name":"Waves of Exhaustion","base_price_modifier_gp":164000},
+  {"id":"DEDP_TRUE_RESURRECTION_MONTHLY","name":"True Resurrection on wielder (1/month)","base_price_modifier_gp":200000}
+]
