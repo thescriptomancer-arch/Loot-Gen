@@ -1,1 +1,24 @@
-[{"range":"01-25","power":"Detect magic 3/day","price_mod_gp":0},{"range":"26-50","power":"Daylight 1/day","price_mod_gp":0},{"range":"51-75","power":"Locate object 1/day","price_mod_gp":1000},{"range":"76-100","power":"Cure moderate wounds 1/day","price_mod_gp":3000}]
+[
+  {"id":"LESSER_BLESS","name":"Bless allies","uses":"3/day","base_price_modifier_gp":1000},
+  {"id":"LESSER_FAERIE_FIRE","name":"Faerie Fire","uses":"3/day","base_price_modifier_gp":1100},
+  {"id":"LESSER_MINOR_IMAGE","name":"Minor Image","uses":"1/day","base_price_modifier_gp":2200},
+  {"id":"LESSER_DEATHWATCH","name":"Deathwatch","uses":"continuous","base_price_modifier_gp":2700},
+  {"id":"LESSER_DETECT_MAGIC","name":"Detect Magic","uses":"at will","base_price_modifier_gp":3600},
+  {"id":"LESSER_RANKS_INTIMIDATE","name":"Skill Ranks: Intimidate +10 ranks","base_price_modifier_gp":5000},
+  {"id":"LESSER_RANKS_DECIPHER","name":"Skill Ranks: Decipher Script +10 ranks","base_price_modifier_gp":5000},
+  {"id":"LESSER_RANKS_KNOWLEDGE","name":"Skill Ranks: Knowledge (choose) +10 ranks","base_price_modifier_gp":5000},
+  {"id":"LESSER_RANKS_SEARCH","name":"Skill Ranks: Search +10 ranks","base_price_modifier_gp":5000},
+  {"id":"LESSER_RANKS_SPOT","name":"Skill Ranks: Spot +10 ranks","base_price_modifier_gp":5000},
+  {"id":"LESSER_RANKS_LISTEN","name":"Skill Ranks: Listen +10 ranks","base_price_modifier_gp":5000},
+  {"id":"LESSER_RANKS_SPELLCRAFT","name":"Skill Ranks: Spellcraft +10 ranks","base_price_modifier_gp":5000},
+  {"id":"LESSER_RANKS_SENSE_MOTIVE","name":"Skill Ranks: Sense Motive +10 ranks","base_price_modifier_gp":5000},
+  {"id":"LESSER_RANKS_BLUFF","name":"Skill Ranks: Bluff +10 ranks","base_price_modifier_gp":5000},
+  {"id":"LESSER_RANKS_DIPLOMACY","name":"Skill Ranks: Diplomacy +10 ranks","base_price_modifier_gp":5000},
+  {"id":"LESSER_MAJOR_IMAGE","name":"Major Image","uses":"1/day","base_price_modifier_gp":5400},
+  {"id":"LESSER_DARKNESS","name":"Darkness","uses":"3/day","base_price_modifier_gp":6500},
+  {"id":"LESSER_HOLD_PERSON","name":"Hold Person","uses":"3/day","base_price_modifier_gp":6500},
+  {"id":"LESSER_ZONE_OF_TRUTH","name":"Zone of Truth","uses":"3/day","base_price_modifier_gp":6500},
+  {"id":"LESSER_DAZE_MONSTER","name":"Daze Monster","uses":"3/day","base_price_modifier_gp":6500},
+  {"id":"LESSER_LOCATE_OBJECT","name":"Locate Object","uses":"3/day","base_price_modifier_gp":6500},
+  {"id":"LESSER_CURE_MOD","name":"Cure Moderate Wounds (2d8+3) on wielder","uses":"3/day","base_price_modifier_gp":6500}
+]
