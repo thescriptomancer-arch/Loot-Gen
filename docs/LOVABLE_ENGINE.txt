@@ -30,9 +30,6 @@ FILES TO LOAD (JSON)
                             {RAW}/armor_shields/templates_engine.config.json
                             {RAW}/armor_shields/templates_armor_shield.json
                             {RAW}/armor_shields/signature_traits.config.json
-                            {RAW}/armor_shields/templates_armor_shield.json
-                            {RAW}/armor_shields/templates_engine.config.json
-                            {RAW}/armor_shields/signature_traits.json
 
                             {RAW}/armor_shields/intelligent_statistics.json
                             {RAW}/armor_shields/intelligent_alignment.json
@@ -56,7 +53,7 @@ FILES TO LOAD (JSON)
 - Optional shards (load iff present/flagged):
                             {RAW}/armor_shields/materials.faerun.json       (if enable_faerun_materials)
                             {RAW}/armor_shields/materials.homebrew.json      (if file exists)
-                            {RAW}/armor_shields/bespoke_items.json           (if enable_bespoke_items)
+                            {RAW}/armor_shields/base_items.bespoke.json      (if enable_bespoke_items)
                             {RAW}/armor_shields/aging_profiles.json          (if enable_aging)
                             {RAW}/armor_shields/aging_environments.json      (if enable_aging)
                             {RAW}/armor_shields/signature_traits.json
@@ -108,23 +105,49 @@ Pipeline (deterministic; obey flags):
    masterwork flag → weight_mult → hardness override → ACP/Max Dex/ASF deltas → HP mult (round half‑up) →
    mithral “treat category lighter by 1” → adamantine DR by final category → attach material_effects.
    Pricing by pricing_rule: ADDERS_BY_CATEGORY / FLAT_ADDER / COST_MULT / DOUBLE_MASTERWORK / PER_POUND_PLUS_MASTERWORK.
+Compatibility gates (hard errors):
+- Shields: metal materials only on heavy steel (or equivalent metal bases); wood materials only on heavy wooden.
+- Armors: metal materials only on metal armors; hide/leather materials only on valid leather/hide types.
+- Example rejects: Astral Driftmetal on Heavy Wooden Shield; Arandur on Leather.
+
 3) Size → apply size rules; **Tiny-or-smaller armor halves base AC (round down)**; finalize per‑pound after this step.
 4) Construction Quality → exclusive pick; masterwork gating; **ACP +1 toward 0 applied once globally**.
 5) Magic Planner → if magical:
 - Name → ID resolution: if any input references an ability by name, normalize via ability_naming.json, then resolve to a canonical ID using ids_registry.json. If missing, reject with “Unknown ability name”.
 - Source guard: when strict_dmg = true, only allow abilities whose ids_registry entry has source ∈ {DMG, SRD}.
-- Cross-file integrity: every ability id used from abilities_by_bonus.json / abilities_by_gp.json MUST exist in ids_registry.json.
+- Cross-file integrity: every ability id used from abilities_by_bonus.json / abilities_by_gp.json MUST exist in 
+Ability bucketing rule:
+- If the source text prices an ability as “+X bonus”, it must appear in abilities_by_bonus.json.
+- If priced in gp, it must appear in abilities_by_gp.json.
+- Validation: reject generation if an ability’s id is placed in the wrong file for its price type.
+ids_registry.json.
 - Build registry indexed by `id` (do not rewrite IDs).
 - Validate each selected ability has aura, cl, prereqs; include activation/notes when present.
 - Apply synergy/supersedence if defined.
 - Enforce enhancement + effective ≤ +10.
 - Magic price = (effective_bonus_total^2)*1000 + Σ(flat gp).
 6) Intelligent (if magical) → chance & Ego; strict_dmg drops non-core if any exist later.
+Intelligent item math:
+- Base price modifiers for lesser/greater/dedicated powers and capability buckets come from the intelligent_* JSONs.
+- Ego = sum of components from intelligent_ego_points.json plus enhancement/special-bonus points per DMG.
+- Alignment/negative levels behavior per intelligent_alignment.json.
+
 7) Cursed (if magical) → chance & model; no discount unless template says.
+Curses:
+- Roll model/type from cursed_types_summary.json; if Intermittent ⇒ pick subtype from cursed_dependent_situations.json; if Requirement/Drawback ⇒ details from cursed_requirements.json / cursed_drawbacks.json.
+- No price discount unless a specific template or house rule applies (engine default: no discount).
+
 8) Naming:
    Canonical: `[+N] [prefix…] [material?] <base> [of suffix…]` (per ability_naming.json).
    Display Title (flavor name): only if magical; deterministic from canonical_name + run_seed.
    Signature traits (if enabled): cosmetic only; no stats/pricing changes.
+Naming (augment):
+- Prepend construction qualities (in priority order) before material.
+- Canonical order becomes:
+  "[+N] [construction_prefixes...] [material?] <base> [of suffix…] [— Signature Trait]"
+- construction_prefixes come from construction_quality.json (field: name_token).
+- Example: "+2 Dwarvencraft Mithral Chain Shirt of Fortification (light) — Shadowy"
+
 
 9) Narrative → short_hook + 1–3 sentence flavor; no stat changes.
 10) Output → rooms with subtotals, item cards (Rules/Narrative/Audit), totals, telemetry.
