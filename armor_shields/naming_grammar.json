@@ -1,0 +1,54 @@
+{
+  "show_masterwork_for_magic_items": false,
+  "construction_qualities": {
+    "order": ["dwarvencraft", "elvencraft", "githcraft", "custom"],
+    "render": {
+      "dwarvencraft": "Dwarvencraft",
+      "elvencraft": "Elvencraft",
+      "githcraft": "Githcraft"
+    },
+    "include_in_name_when_present": true
+  },
+  "order_of_components": [
+    "+bonus_prefix",
+    "construction_quality",
+    "material",
+    "base_item",
+    "template",
+    "abilities",
+    "augment_crystals",
+    "signature_trait",
+    "aging_marker"
+  ],
+  "base_item_format": {
+    "shield": "{materialized_base} {base_name}",
+    "armor": "{materialized_base}"
+  },
+  "ability_rendering": {
+    "bonus_abilities_joiner": " and ",
+    "gp_abilities_prefix": "of ",
+    "synergy_tag": "",
+    "order": ["by_bonus", "by_gp", "synergy"],
+    "normalize_case": true
+  },
+  "template_rendering": {
+    "prefix_in_parens": false,
+    "suffix_in_parens": false,
+    "as_adjective_before_material": false,
+    "as_adjective_after_base": false
+  },
+  "signature_trait_rendering": {
+    "separator": " — ",
+    "style": "Title Case"
+  },
+  "aging_rendering": {
+    "enabled": true,
+    "format": " ({aging_stage})"
+  },
+  "examples": [
+    "+2 Dwarvencraft mithral chain shirt of shadow",
+    "+1 hellforged heavy steel shield of arrow deflection — Shadowy",
+    "+3 elvencraft darkleaf breastplate of energy immunity",
+    "+1 cold iron rapier (feycraft) of keen"
+  ]
+}
