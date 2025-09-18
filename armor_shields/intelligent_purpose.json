@@ -1,1 +1,15 @@
-[{"range":"01-25","purpose":"Slay arcane spellcasters"},{"range":"26-50","purpose":"Defend the weak"},{"range":"51-75","purpose":"Destroy undead"},{"range":"76-100","purpose":"Serve a draconic lineage"}]
+{
+  "purposes": [
+    {"id":"PURPOSE_SLay_OPPOSITE_ALIGNMENT","name":"Defeat/slay diametrically opposed alignment"},
+    {"id":"PURPOSE_SLay_ARCANE","name":"Defeat/slay arcane spellcasters"},
+    {"id":"PURPOSE_SLay_DIVINE","name":"Defeat/slay divine spellcasters"},
+    {"id":"PURPOSE_SLay_NONSPELL","name":"Defeat/slay nonspellcasters"},
+    {"id":"PURPOSE_SLay_TYPE","name":"Defeat/slay a particular creature type"},
+    {"id":"PURPOSE_SLay_RACE","name":"Defeat/slay a particular race or kind"},
+    {"id":"PURPOSE_DEFEND_RACE","name":"Defend a particular race or kind"},
+    {"id":"PURPOSE_SLay_SERVANTS_OF_DEITY","name":"Defeat/slay servants of a specific deity"},
+    {"id":"PURPOSE_DEFEND_SERVANTS_OF_DEITY","name":"Defend servants/interests of a specific deity"},
+    {"id":"PURPOSE_SLay_ALL","name":"Defeat/slay all (other than item and wielder)"},
+    {"id":"PURPOSE_DM_CHOICE","name":"DM or Character’s Choice"}
+  ]
+}
