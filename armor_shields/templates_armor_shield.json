@@ -1,0 +1,86 @@
+[
+  {
+    "id": "tmpl_feycraft",
+    "name": "Feycraft",
+    "source": "DMG2",
+    "applies_to": ["armor","shield"],
+    "cost_gp": 500,
+    "reqs": { "who": "fey or under magical influence of fey", "where": "not within a small town or larger" },
+    "stat_mods": { "weight_mult": 0.9, "hardness_delta": -1, "hp_delta": -5, "asf_delta_pct": -5 },
+    "affinities": { "special_abilities": ["glamered","silent_moves","improved_silent_moves","greater_silent_moves"], "specific_items": ["winged shield"] },
+    "special_effects": ["+1 Bluff (verbal deception only) from wearer"],
+    "notes": "Light/Medium armor or wooden shields; mithral heavy counts as medium. Nonmagical."
+  },
+  {
+    "id": "tmpl_fireshaped",
+    "name": "Fireshaped",
+    "source": "DMG2",
+    "applies_to": ["armor","shield"],
+    "cost_gp": 300,
+    "reqs": { "who": "native of Elemental Plane of Fire", "where": "crafted on Elemental Plane of Fire" },
+    "stat_mods": {},
+    "affinities": { "special_abilities": ["fire_resistance","improved_fire_resistance","greater_fire_resistance"], "specific_items": [] },
+    "special_effects": ["+2 saves vs fire effects and environmental heat","Emits torch-bright faux flames on strikes (cosmetic)"],
+    "notes": "Metal armor/shields only (no wood/leather/hide). Nonmagical."
+  },
+  {
+    "id": "tmpl_githcraft",
+    "name": "Githcraft",
+    "source": "DMG2",
+    "applies_to": ["armor","shield"],
+    "cost_gp": 600,
+    "reqs": { "who": "githyanki", "where": "crafted on the Astral Plane" },
+    "stat_mods": { "asf_delta_pct": -5 },
+    "affinities": { "special_abilities": ["mindarmor (XPH)"], "specific_items": ["mithral full plate of speed"] },
+    "special_effects": ["+1 Concentration checks for wearer/bearer"],
+    "notes": "Distinctive; using it may draw githyanki attention. Nonmagical."
+  },
+  {
+    "id": "tmpl_gloryborn",
+    "name": "Gloryborn",
+    "source": "DMG2",
+    "applies_to": ["armor","shield"],
+    "cost_gp": 150,
+    "reqs": { "who": "native of Ysgard", "where": "crafted on Ysgard" },
+    "stat_mods": {},
+    "affinities": { "special_abilities": ["bashing"], "specific_items": ["rhino hide"] },
+    "special_effects": ["+1 AC while charging (until start of wearer’s next turn)"],
+    "notes": "Evil users take -1 attack (discomfort). Nonmagical."
+  },
+  {
+    "id": "tmpl_hellforged",
+    "name": "Hellforged",
+    "source": "DMG2",
+    "applies_to": ["armor","shield"],
+    "cost_gp": 1000,
+    "reqs": { "who": "native of Nine Hells", "where": "crafted on Nine Hells" },
+    "stat_mods": { "hardness_delta": 1, "hp_delta": 5, "max_dex_delta": -1, "acp_delta": 1, "asf_delta_pct": 5 },
+    "affinities": { "special_abilities": ["fortification_light","fortification_moderate","fortification_heavy"], "specific_items": ["breastplate of command"] },
+    "special_effects": ["Armor (not shields): +1 AC when adjacent to an ally"],
+    "notes": "Good users take -1 attack (discomfort). Nonmagical."
+  },
+  {
+    "id": "tmpl_pitspawned",
+    "name": "Pitspawned",
+    "source": "DMG2",
+    "applies_to": ["armor","shield"],
+    "cost_gp": 600,
+    "reqs": { "who": "native of the Abyss", "where": "crafted on the Abyss" },
+    "stat_mods": {},
+    "affinities": { "special_abilities": ["shadow","improved_shadow","greater_shadow"], "specific_items": ["demon armor"] },
+    "special_effects": ["Attacker takes 1 damage on successful melee hit vs wearer/bearer (doesn’t stack with multiple pitspawned pieces; not reduced by DR)"],
+    "notes": "Good users take -1 attack (discomfort). Often used on light armor. Nonmagical."
+  },
+  {
+    "id": "tmpl_soulforged",
+    "name": "Soulforged",
+    "source": "DMG2",
+    "applies_to": ["armor","shield"],
+    "cost_gp": 400,
+    "reqs": { "who": "native of Celestia", "where": "crafted on Celestia" },
+    "stat_mods": { "hardness_delta": 1, "hp_delta": 5 },
+    "affinities": { "special_abilities": ["invulnerability","blinding"], "specific_items": ["celestial armor"] },
+    "special_effects": ["+2 on checks to resist bull rush or trip"],
+    "notes": "Evil users take -1 attack (discomfort). Nonmagical."
+  }
+]
