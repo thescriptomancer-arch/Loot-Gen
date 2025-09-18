@@ -1,1 +1,20 @@
-[{"requirement":"Weekly tithe of 50 gp","cadence":"weekly","if_unmet":"item becomes dormant 7 days"},{"requirement":"Daily one-hour vigil","cadence":"daily","if_unmet":"item refuses to function 24h"}]
+[
+  {"id":"REQ_DOUBLE_EAT","name":"Eat twice as much (daily)"},
+  {"id":"REQ_DOUBLE_SLEEP","name":"Sleep twice as much (daily)"},
+  {"id":"REQ_ONE_TIME_QUEST","name":"Complete a specific quest (one time)"},
+  {"id":"REQ_DAILY_VALUABLES","name":"Sacrifice 100 gp of valuables (daily)"},
+  {"id":"REQ_WEEKLY_MAGIC","name":"Sacrifice 2,000 gp of magic items (weekly)"},
+  {"id":"REQ_SWEAR_FEALTY","name":"Swear fealty (persistent)"},
+  {"id":"REQ_DISCARD_OTHERS","name":"Discard all other magic items (persistent)"},
+  {"id":"REQ_WORSHIP_DEITY","name":"Worship a particular deity (persistent)"},
+  {"id":"REQ_CHANGE_NAME","name":"Change name to a specific one (persistent)"},
+  {"id":"REQ_ADD_CLASS","name":"Add a specific class at next level (one time)"},
+  {"id":"REQ_MIN_SKILL_RANKS","name":"Have minimum ranks in a skill (persistent)"},
+  {"id":"REQ_CON_SACRIFICE","name":"Sacrifice 2 Con (one time)"},
+  {"id":"REQ_DAILY_HOLY_WATER","name":"Cleanse with holy water (daily)"},
+  {"id":"REQ_DAILY_KILL","name":"Use to kill a living creature (daily)"},
+  {"id":"REQ_MONTHLY_LAVA","name":"Bathe in volcanic lava (monthly)"},
+  {"id":"REQ_USE_DAILY","name":"Must be used at least once per day (daily)"},
+  {"id":"REQ_DRAW_BLOOD","name":"Must draw blood before stowing (per use)"},
+  {"id":"REQ_DAILY_SPELL","name":"Cast a spell on it daily (e.g., bless) (daily)"}
+]
