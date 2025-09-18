@@ -1,0 +1,1 @@
+{"enable": true, "roll_chance": 0.06, "apply_to": ["armor","shield"], "stacking_order": ["base","special_material","magic","template"], "emit_affinity_metadata": true, "respect_availability_rule": false, "notes": "Templates are nonmagical. We only annotate affinities; no auto-discounts in price."}
