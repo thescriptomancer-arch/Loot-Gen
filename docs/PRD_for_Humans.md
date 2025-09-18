@@ -95,5 +95,21 @@ Examples: clasp_of_energy_protection_[acid|cold|elec|fire|sonic]_[least|lesser|g
   Used to (1) resolve names → canonical IDs, (2) enforce `strict_dmg` filtering, and (3) ensure every referenced ability is known.
 - Full SRD text reprints (we reference by id; we don’t ship rule text).
 
+- ## Optional Module: Item Templates (DMG II)
+
+Nonmagical overlays for armor & shields that adjust weight, hardness/HP, ASF/ACP/Max Dex, and add situational notes. They add a flat gp surcharge to the mundane item cost and NEVER change enhancement pricing.
+
+Files:
+- templates_engine.config.json — toggle, roll chance, scope.
+- templates_armor_shield.jsonl — data rows for each DMG II template (armor/shield).
+(Weapons can be added later in templates_weapons.jsonl.)
+
+Rules:
+- Applied after materials and magic.
+- Template effects stack with special materials and magic (as described in DMG II).
+- Affinity metadata is informational (10% raw-materials discount for future crafting); generator does not auto-discount prices.
+- If desired, you can enable the DMG II availability modifier (treating availability price as base + 10×template cost).
+
+
 ## Roadmap (next)
 - Weapons (incl. augment crystals), more setting shards, broader bespoke catalog.
