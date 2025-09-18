@@ -1,1 +1,16 @@
-{"version":1,"ego_points":{"per_enhancement":1,"per_effective_bonus":1,"telepathy":1,"read_magic":1,"read_languages":1,"mental_over_10_per_point":1}}
+{
+  "rules": [
+    {"attribute":"enhancement_bonus_each_plus","ego_points":1},
+    {"attribute":"equivalent_bonus_each_plus","ego_points":1},
+    {"attribute":"lesser_power","ego_points":1},
+    {"attribute":"greater_power","ego_points":2},
+    {"attribute":"special_purpose_with_dedicated","ego_points":4},
+    {"attribute":"telepathy","ego_points":1},
+    {"attribute":"read_languages","ego_points":1},
+    {"attribute":"read_magic","ego_points":1},
+    {"attribute":"int_bonus_each_plus","ego_points":1},
+    {"attribute":"wis_bonus_each_plus","ego_points":1},
+    {"attribute":"cha_bonus_each_plus","ego_points":1}
+  ],
+  "notes": "Sum to compute Ego; wielder Will save vs Ego for dominance."
+}
