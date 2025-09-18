@@ -1,1 +1,24 @@
-[{"range":"01-25","power":"Heal 1/day","price_mod_gp":10000},{"range":"26-50","power":"Dispel magic 3/day","price_mod_gp":6000},{"range":"51-75","power":"True seeing 1/day","price_mod_gp":12000},{"range":"76-100","power":"Teleport 1/day","price_mod_gp":15000}]
+[
+  {"id":"GREATER_DETECT_OPPOSING_ALIGNMENT","name":"Detect Opposing Alignment","uses":"at will","base_price_modifier_gp":7200},
+  {"id":"GREATER_DETECT_UNDEAD","name":"Detect Undead","uses":"at will","base_price_modifier_gp":7200},
+  {"id":"GREATER_CAUSE_FEAR","name":"Cause Fear","uses":"at will","base_price_modifier_gp":7200},
+  {"id":"GREATER_DIMENSIONAL_ANCHOR","name":"Dimensional Anchor","uses":"1/day","base_price_modifier_gp":10000},
+  {"id":"GREATER_DISMISSAL","name":"Dismissal","uses":"1/day","base_price_modifier_gp":10000},
+  {"id":"GREATER_LESSER_GLOBE","name":"Lesser Globe of Invulnerability","uses":"1/day","base_price_modifier_gp":10000},
+  {"id":"GREATER_ARCANE_EYE","name":"Arcane Eye","uses":"1/day","base_price_modifier_gp":10000},
+  {"id":"GREATER_DETECT_SCRYING","name":"Detect Scrying (continuous)","base_price_modifier_gp":10000},
+  {"id":"GREATER_WALL_OF_FIRE_RING","name":"Wall of Fire (ring; wielder at center)","uses":"1/day","base_price_modifier_gp":10000},
+  {"id":"GREATER_QUENCH","name":"Quench","uses":"3/day","base_price_modifier_gp":16000},
+  {"id":"GREATER_STATUS","name":"Status","uses":"at will","base_price_modifier_gp":11000},
+  {"id":"GREATER_GUST_OF_WIND","name":"Gust of Wind","uses":"3/day","base_price_modifier_gp":11000},
+  {"id":"GREATER_CLAIRVOYANCE","name":"Clairvoyance","uses":"3/day","base_price_modifier_gp":16000},
+  {"id":"GREATER_MAGIC_CIRCLE","name":"Magic Circle vs. Opposing Alignment","uses":"at will","base_price_modifier_gp":16000},
+  {"id":"GREATER_HASTE_OWNER","name":"Haste (owner)","uses":"3/day","base_price_modifier_gp":16000},
+  {"id":"GREATER_DAYLIGHT","name":"Daylight","uses":"3/day","base_price_modifier_gp":16000},
+  {"id":"GREATER_DEEPER_DARKNESS","name":"Deeper Darkness","uses":"3/day","base_price_modifier_gp":16000},
+  {"id":"GREATER_INVISIBILITY_PURGE","name":"Invisibility Purge (30 ft.)","uses":"3/day","base_price_modifier_gp":16000},
+  {"id":"GREATER_SLOW_ENEMIES","name":"Slow (enemies)","uses":"3/day","base_price_modifier_gp":16000},
+  {"id":"GREATER_LOCATE_CREATURE","name":"Locate Creature","uses":"3/day","base_price_modifier_gp":30000},
+  {"id":"GREATER_FEAR_3DAY","name":"Fear","uses":"3/day","base_price_modifier_gp":30000},
+  {"id":"GREATER_DETECT_THOUGHTS","name":"Detect Thoughts","uses":"at will","base_price_modifier_gp":44000}
+]
