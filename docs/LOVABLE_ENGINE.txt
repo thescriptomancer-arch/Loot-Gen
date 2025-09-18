@@ -28,6 +28,9 @@ FILES TO LOAD (JSON)
                             {RAW}/armor_shields/cursed_chance.json
                             {RAW}/armor_shields/cursed_common_curses.json
                             {RAW}/armor_shields/ability_naming.json
+                            {RAW}/armor_shields/templates_engine.config.json
+                            {RAW}/armor_shields/templates_armor_shield.json
+                            {RAW}/armor_shields/signature_traits.config.json
 - IDs registry (validation only): {RAW}/ids_registry.json
 - Optional shards (load iff present/flagged):
                             {RAW}/armor_shields/materials.faerun.json       (if enable_faerun_materials)
